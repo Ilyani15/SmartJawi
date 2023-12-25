@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightWhite">#f2f5f8</color>
+    <color name="lavender">#8692f7</color>
+    <color name="grey_dark">#808080</color>
+    <color name="grey">#d2d2d2</color>
+    <color name="pink">#F06292</color>
+    <color name="light_coral">#F08080</color>
+    <color name="apricot">#fbceb1 </color>
+    <color name="yellow_tip">#FEFFF1</color>
+    <color name="vivid_tangerine">#ffa089</color>
+    <color name="salmon">#ff8c69</color>
+    <color name="atomic_tangerine">#ff9966</color>
+    <color name="coral">#ff7f50</color>
+    <color name="orange_category">#FFBB5C</color>
+    <color name="orange_tip">#F46E16</color>
+    <color name="willpower_orange">#fd5800</color>
+    <color name="orange_red">#ff4500</color>
+    <color name="light_sky">#87CEFA</color>
+    <color name="blue">#0041FD</color>
+    <color name="light_cyan">#66FFFF</color>
+    <color name="cyan_lime_green">#66FFB3</color>
+    <color name="yellow1">#4DFFAB00</color>
+    <color name="red">#ff0000 </color>
+    <color name="lime">#00ff00 </color>
+    <color name="yellow">#FDD835</color>
+    <color name="light_yellow">#FFFF66</color>
+    <color name="mustard">#fdbc00</color>
+    <color name="Transparent">#00000000</color>
+    <color name="Transparent80">#80000000</color>
+    <color name="dark_grey">#494444</color>
+    <color name="brown">#A52A2A</color>
+    <color name="chesnut">#954535</color>
+    <color name="cordovan_brown">#814141</color>
+    <color name="dar_red">#8B0000</color>
+    <color name="khaki">#F0E68C</color>
+    <color name="bg_hijaiyah">#FEFFF1</color>
+    <color name="light_brown">#C4A484</color>
+</resources>
