@@ -1,4 +1,4 @@
-package com.aqil.smartjawimad;
+package com.example.smartjawi;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

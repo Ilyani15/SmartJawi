@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/bg_eja_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/beachday"
+        android:text="PERMAINAN TAMAT"
+        android:layout_marginTop="@dimen/_85sdp"
+        android:gravity="center"
+        android:textColor="@color/light_yellow"
+        android:textSize="80dp" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:text="result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/replay_eja_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ic_replay_yellow"
+        android:onClick="onClick" />
+
+<!--    <RelativeLayout-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <Button-->
+<!--            android:id="@+id/replay_eja_btn"-->
+<!--            android:background="@drawable/buttonplay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:onClick="onClick"-->
+<!--            android:fontFamily="@font/font"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:text="main semula"-->
+<!--            android:textAllCaps="true"/>-->
+<!--    </RelativeLayout>-->
+
+</LinearLayout>

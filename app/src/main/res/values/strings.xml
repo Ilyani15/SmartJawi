@@ -2,4 +2,12 @@
     <string name="app_name">Smart Jawi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // Eja Game
+    <string name="score_eja">Skor</string>
+    <string name="score_eja_txt">Skor :</string>
+    <string name="win_text">Awak Menang !!</string>
+    <string name="loading">Memuatkan</string>
+    <string name="play">MAIN</string>
+    <string name="quit">KELUAR</string>
 </resources>
