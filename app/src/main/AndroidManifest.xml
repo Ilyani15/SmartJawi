@@ -127,6 +127,9 @@
             android:name=".Game.Cw.Cw_haiwan"
             android:exported="false" />
         <activity
+            android:name=".Game.Cw.Cw_warna"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
