@@ -57,7 +57,7 @@ public class FirstCW extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstCW.this, DD_Game_Warna1.class);
+                Intent intent = new Intent(FirstCW.this, Cw_warna.class);
                 startActivity(intent);
             }
         });
