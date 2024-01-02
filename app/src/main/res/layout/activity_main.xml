@@ -18,14 +18,14 @@
         android:id="@+id/meow_Bottom_Navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/yellow_tip"
+        android:layout_alignParentBottom="true"
+        android:background="#FFE6A7"
+        app:mbn_backgroundBottomColor="#99582A"
         app:mbn_circleColor="@color/yellow_tip"
-        app:mbn_backgroundBottomColor="@color/apricot"
         app:mbn_countBackgroundColor="#ff6f00"
         app:mbn_countTextColor="#BA5757"
-        app:mbn_defaultIconColor="@color/brown"
-        app:mbn_selectedIconColor="@color/orange_red"
-        app:mbn_shadowColor="#1f212121"
-        android:layout_alignParentBottom="true"/>
+        app:mbn_defaultIconColor="#BB9457"
+        app:mbn_selectedIconColor="#432818"
+        app:mbn_shadowColor="#1f212121" />
 
 </RelativeLayout>

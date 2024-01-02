@@ -1,227 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/yellow_tip"
+    android:background="@drawable/smartjjawi"
     tools:context=".Fragments.BelajarFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
-            <ImageButton
-                android:id="@+id/backk_belajar"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/ic_backk" />
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="15dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_baseline_manage_search_24"
-                app:tint="@color/orange_category" />
-        </RelativeLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/brandon_grotesque_black"
-            android:layout_gravity="center"
-            android:text="mari belajar !"
-            android:textAllCaps="true"
-            android:textSize="30sp"
-            android:layout_marginBottom="15dp"/>
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/background_kosong"
-                        android:backgroundTint="@color/light_yellow">
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/hijaiyah_btn"
-                            android:background="@color/Transparent"/>
-                        <TextView
-                            android:id="@+id/hijaiyah_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/baloo"
-                            android:layout_marginStart="30sp"
-                            android:layout_marginVertical="25sp"
-                            android:layout_centerVertical="true"
-                            android:text="Huruf \nHijaiyah"
-                            android:textColor="#494444"
-                            android:textSize="30sp" />
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:layout_marginEnd="20sp"
-                            android:src="@drawable/alifbata_logo"
-                            android:layout_alignParentRight="true"/>
-                    </RelativeLayout>
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/background_kosong"
-                        android:backgroundTint="#FFBB5C">
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/hjGambar_btn"
-                            android:background="@color/Transparent"/>
-                        <TextView
-                            android:id="@+id/hjGambar_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/baloo"
-                            android:layout_marginStart="30sp"
-                            android:layout_marginVertical="25sp"
-                            android:layout_centerVertical="true"
-                            android:text="Huruf Jawi \nBergambar"
-                            android:textColor="#494444"
-                            android:textSize="30sp" />
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:layout_marginEnd="10sp"
-                            android:src="@drawable/logo_jawi_gambar"
-                            android:layout_alignParentRight="true"/>
-                    </RelativeLayout>
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/background_kosong"
-                        android:backgroundTint="@color/light_yellow">
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/nomborjawi_btn"
-                            android:background="@color/Transparent"/>
-                        <TextView
-                            android:id="@+id/nomborjawi_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/baloo"
-                            android:layout_marginStart="30sp"
-                            android:layout_marginVertical="25sp"
-                            android:layout_centerVertical="true"
-                            android:text="Nombor \nJawi"
-                            android:textColor="#494444"
-                            android:textSize="30sp" />
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:layout_marginEnd="20sp"
-                            android:src="@drawable/logo_quiz"
-                            android:layout_alignParentRight="true"/>
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-                    </RelativeLayout>
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/background_kosong"
-                        android:backgroundTint="#FFBB5C">
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/doa_btn"
-                            android:background="@color/Transparent"/>
-                        <TextView
-                            android:id="@+id/doa_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/baloo"
-                            android:layout_marginStart="30sp"
-                            android:layout_marginVertical="25sp"
-                            android:layout_centerVertical="true"
-                            android:text="Doa \nHarian"
-                            android:textColor="#494444"
-                            android:textSize="30sp" />
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:layout_marginEnd="20sp"
-                            android:layout_marginVertical="5dp"
-                            android:src="@drawable/logo_doa"
-                            android:layout_alignParentRight="true"/>
-                    </RelativeLayout>
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/background_kosong"
-                        android:backgroundTint="@color/light_yellow">
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/surah_btn"
-                            android:background="@color/Transparent"/>
-                        <TextView
-                            android:id="@+id/surah_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/baloo"
-                            android:layout_marginStart="30sp"
-                            android:layout_marginVertical="25sp"
-                            android:layout_centerVertical="true"
-                            android:text="Surah \nPilihan"
-                            android:textColor="#494444"
-                            android:textSize="30sp" />
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:padding="10dp"
-                            android:src="@drawable/logo_ngaji"
-                            android:layout_alignParentRight="true"/>
-                    </RelativeLayout>
-                </RelativeLayout>
-            </LinearLayout>
-        </ScrollView>
+        <RelativeLayout
+            android:id="@+id/dua"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnbg"
+            android:clickable="true"
+            android:elevation="3dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="99dp"
+                android:layout_height="97dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="31dp"
+                android:layout_weight="1"
+                android:src="@drawable/hurufjawi" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="120dp"
+                android:fontFamily="@font/fontjawi"
+                android:text="Senarai Huruf Jawi"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragment_belajar"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/satu"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btnbg"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/suaiPadan"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/nombor" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/fontjawi"
+                    android:gravity="center"
+                    android:text="Senarai Nombor\nJawi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/background"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:clickable="true"
+                android:elevation="3dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="61dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/fontjawi"
+                    android:text="Warna"
+                    android:textAlignment="center"
+                    android:textColor="@color/background"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="97dp"
+                    android:layout_height="98dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/colour" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:elevation="3dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="120dp"
+                    android:fontFamily="@font/fontjawi"
+                    android:text="Haiwan"
+                    android:textAlignment="center"
+                    android:textColor="@color/background"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="97dp"
+                    android:layout_height="98dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/cat" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnbg"
+                android:elevation="3dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="118dp"
+                    android:fontFamily="@font/fontjawi"
+                    android:text="Buahan"
+                    android:textAlignment="center"
+                    android:textColor="@color/background"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="97dp"
+                    android:layout_height="98dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/fruits" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Jom Belajar"
+        android:textSize="40sp"
+        android:fontFamily="@font/summary"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/closebg"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,91 +2,35 @@ package com.example.smartjawi.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 
-import com.example.smartjawi.HijaiyahSection.HijaiyahActivity;
+import androidx.fragment.app.Fragment;
+
 import com.example.smartjawi.MainActivity;
 import com.example.smartjawi.R;
 
 public class BelajarFragment extends Fragment {
-    Button hijaiyahbtn, nomborjawibtn, hijaiyahGambarbtn, doabtn, surahbtn;
-    ImageButton backk_belajar;
-
-    public BelajarFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootview = inflater.inflate(R.layout.fragment_belajar, container, false);
+        View view = inflater.inflate(R.layout.fragment_belajar, container, false);
 
-        hijaiyahbtn = rootview.findViewById(R.id.hijaiyah_btn);
-        nomborjawibtn = rootview.findViewById(R.id.nomborjawi_btn);
-        hijaiyahGambarbtn = rootview.findViewById(R.id.hjGambar_btn);
-        doabtn = rootview.findViewById(R.id.doa_btn);
-        surahbtn = rootview.findViewById(R.id.surah_btn);
+        ImageView close = view.findViewById(R.id.close);
 
-        hijaiyahbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), HijaiyahActivity.class);
-                startActivity(intent);
-            }
-        });
-//        nomborjawibtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getActivity(), NomborJawiActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        hijaiyahGambarbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getActivity(), JG_Activity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        doabtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getActivity(), DoaHarianActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        surahbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getActivity(), PSurahActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-
-        backk_belajar = rootview.findViewById(R.id.backk_belajar);
-        backk_belajar.setOnClickListener(new View.OnClickListener() {
+        close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                HomeFragment homeFragment = new HomeFragment();
-//                loadFragment(homeFragment);
-
-                Intent intentBelajar = new Intent(getActivity(), MainActivity.class);
-                startActivity(intentBelajar);
+                // Assuming HomeFragment is part of MainActivity
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+                // finish() is not applicable to Fragments
             }
         });
-        return rootview;
-    }
 
-//    private void loadFragment(Fragment fragment) {
-//        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//        fragmentTransaction.replace(R.id.fragment_belajar, fragment);
-//        fragmentTransaction.addToBackStack(null);
-//        fragmentTransaction.commit();
-//    }
+        return view;
+    }
 }

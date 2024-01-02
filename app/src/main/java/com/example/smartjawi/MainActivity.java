@@ -31,10 +31,9 @@ public class MainActivity extends AppCompatActivity {
         meowBottomNavigation.show(1, true);
 
         meowBottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_baseline_home_24));
-        meowBottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_baseline_book_24));
-        meowBottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_baseline_draw_24));
-        meowBottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_baseline_castle_24));
-        meowBottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.ic_baseline_person_24));
+        meowBottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_baseline_draw_24));
+        meowBottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_baseline_castle_24));
+        meowBottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_baseline_person_24));
 
         meowBottomNavigation.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
             @Override
@@ -44,14 +43,12 @@ public class MainActivity extends AppCompatActivity {
                         replace(new HomeFragment());
                         break;
                     case 2:
-                        replace(new BelajarFragment());
+                        replace(new QuizFragment());
                         break;
                     case 3:
-                        replace(new QuizFragment());
-                    case 4:
                         replace(new GameFragment());
                         break;
-                    case 5:
+                    case 4:
                         replace(new ProfileFragment());
                         break;
                 } return null;
