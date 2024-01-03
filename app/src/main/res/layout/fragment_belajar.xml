@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <RelativeLayout
-            android:id="@+id/dua"
+            android:id="@+id/satu"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="130dp"
@@ -75,7 +75,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/satu"
+                android:id="@+id/lima"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -109,6 +109,7 @@
             </LinearLayout>
 
             <RelativeLayout
+                android:id="@+id/dua"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
@@ -151,6 +152,7 @@
             android:orientation="horizontal">
 
             <RelativeLayout
+                android:id="@+id/tiga"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -184,6 +186,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/empat"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
