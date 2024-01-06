@@ -22,6 +22,20 @@
         app:layout_constraintTop_toBottomOf="@+id/age"
         app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="159dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/fontjawi"
+        android:text="LOGIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -53,7 +67,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Username"
+        android:hint="Username"
         android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +90,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Email"
+        android:hint="Email"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/username"
         app:layout_constraintHorizontal_bias="0.0"
@@ -97,7 +111,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Password"
+        android:hint="Password"
         android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/email"
@@ -119,7 +133,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Age"
+        android:hint="Age"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/password"

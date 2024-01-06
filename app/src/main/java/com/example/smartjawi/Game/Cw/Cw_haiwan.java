@@ -50,7 +50,7 @@ public class Cw_haiwan extends AppCompatActivity {
             final TextView choice3 = (TextView) findViewById(R.id.textView2);
             final TextView choice4 = (TextView) findViewById(R.id.textView3);
             final TextView choice5 = (TextView) findViewById(R.id.textView4);
-            final TextView choice6 = (TextView) findViewById(R.id.textView6);
+            final TextView choice6 = (TextView) findViewById(R.id.name);
             final TextView choice7 = (TextView) findViewById(R.id.textView7);
             final TextView choice8 = (TextView) findViewById(R.id.textView8);
             final TextView choice9 = (TextView) findViewById(R.id.textView9);

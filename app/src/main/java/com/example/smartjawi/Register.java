@@ -9,8 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.smartjawi.Fragments.GameFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -27,6 +29,7 @@ public class Register extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         editEmail = findViewById(R.id.email);
@@ -49,6 +52,18 @@ public class Register extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "please insert all data", Toast.LENGTH_LONG).show();
             }
         });
+
+        Button close = findViewById(R.id.login);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(com.example.smartjawi.Register.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
     private void register(String username, String email, String password, String age){
         progressDialog.show();

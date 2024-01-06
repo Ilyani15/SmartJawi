@@ -127,6 +127,12 @@
             android:name=".Game.Cw.Cw_haiwan"
             android:exported="false" />
         <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
             android:name=".Game.Cw.Cw_warna"
             android:exported="false" />
         <activity
