@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,13 +13,127 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
-            android:name=".Belajar.HaiwanJawi"
+            android:name=".Game.VG.FirstVG"
             android:exported="false" />
         <activity
-            android:name=".Belajar.WarnaJawi"
+            android:name=".Game.SG.FirstSG"
             android:exported="false" />
         <activity
-            android:name=".Belajar.NomborJawi"
+            android:name=".Game.DD.DD_Result_Nombor"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Nombor1"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Nombor2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Nombor3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Nombor4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Result_Warna"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Warna1"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Warna2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Warna3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Warna4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Result_Buah"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Buah1"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Buah2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Buah3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Buah4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Haiwan1"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Haiwan2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Haiwan3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Game_Haiwan4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.DD_Result_Haiwan"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.FirstMG"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.FirstDD"
+            android:exported="false" />
+        <activity
+            android:name=".Game.Cw.FirstCW"
+            android:exported="false" />
+        <activity android:name=".Quiz.Quiz_Nombor1" />
+        <activity android:name=".Quiz.Quiz_Nombor2" />
+        <activity android:name=".Quiz.Quiz_Nombor3" />
+        <activity android:name=".Quiz.Quiz_Nombor4" />
+        <activity android:name=".Quiz.Quiz_Nombor5" />
+        <activity android:name=".Quiz.Quiz_ResultNombor" />
+        <activity android:name=".Quiz.Quiz_Haiwan1" />
+        <activity android:name=".Quiz.Quiz_Haiwan2" />
+        <activity android:name=".Quiz.Quiz_Haiwan3" />
+        <activity android:name=".Quiz.Quiz_Haiwan4" />
+        <activity android:name=".Quiz.Quiz_Haiwan5" />
+        <activity android:name=".Quiz.Quiz_ResultHaiwan" />
+        <activity android:name=".Quiz.Quiz_Warna1" />
+        <activity android:name=".Quiz.Quiz_Warna2" />
+        <activity android:name=".Quiz.Quiz_Warna3" />
+        <activity android:name=".Quiz.Quiz_Warna4" />
+        <activity android:name=".Quiz.Quiz_Warna5" />
+        <activity android:name=".Quiz.Quiz_ResultWarna" />
+        <activity android:name=".Quiz.Quiz_Buah1" />
+        <activity android:name=".Quiz.Quiz_Buah2" />
+        <activity android:name=".Quiz.Quiz_Buah3" />
+        <activity android:name=".Quiz.Quiz_Buah4" />
+        <activity android:name=".Quiz.Quiz_Buah5" />
+        <activity android:name=".Quiz.Quiz_ResultBuah" />
+        <activity
+            android:name=".Fragments.HomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.BelajarFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Game.Cw.Cw_nombor"
+            android:exported="false" />
+        <activity
+            android:name=".Game.Cw.Cw_buahan"
+            android:exported="false" />
+        <activity
+            android:name=".Game.Cw.Cw_haiwan"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Game.Cw.Cw_warna"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
