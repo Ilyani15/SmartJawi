@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.smartjawi" />
-                  <option name="mobileSdkAppId" value="1:844683701172:android:c1a606f0bc2e11e18720e1" />
-                  <option name="projectId" value="smartjawi-97083" />
-                  <option name="projectNumber" value="844683701172" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
