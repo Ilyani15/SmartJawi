@@ -13,6 +13,15 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
+            android:name=".Credits"
+            android:exported="false" />
+        <activity
+            android:name=".Rewards"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressTracking"
+            android:exported="false" />
+        <activity
             android:name=".Belajar.BuahJawi"
             android:exported="false" />
         <activity

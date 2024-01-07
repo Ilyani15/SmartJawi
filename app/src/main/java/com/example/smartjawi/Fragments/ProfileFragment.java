@@ -10,14 +10,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.smartjawi.Credits;
+import com.example.smartjawi.Game.Cw.FirstCW;
 import com.example.smartjawi.Login;
+import com.example.smartjawi.ProgressTracking;
 import com.example.smartjawi.R;
+import com.example.smartjawi.Rewards;
 import com.example.smartjawi.model.UserModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -37,6 +42,7 @@ public class ProfileFragment extends Fragment {
     Button logout;
     TextView userNameTextView, userEmailTextView, userAgeTextView, userPasswordTextView;
     ImageView profilePic, btnEdit;
+    LinearLayout btn1,btn2,btn3,btn4;
 
     // Request code for image picker
     private static final int PICK_IMAGE_REQUEST = 1;
@@ -59,6 +65,11 @@ public class ProfileFragment extends Fragment {
         userPasswordTextView = view.findViewById(R.id.password);
         btnEdit = view.findViewById(R.id.btn_edit);
         profilePic = view.findViewById(R.id.profilepic);
+        btn1  = view.findViewById(R.id.progresstracking);
+        btn2  = view.findViewById(R.id.rewards);
+        btn3  = view.findViewById(R.id.credits);
+
+
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +79,32 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ProgressTracking.class);
+                startActivity(intent);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Rewards.class);
+                startActivity(intent);
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Credits.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         // Read user data from Firestore and display it
         readUserDataFromFirestore();
