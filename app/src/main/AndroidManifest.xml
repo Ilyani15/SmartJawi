@@ -13,6 +13,39 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
+            android:name=".Game.MG.Mg_Result_Warna"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.Mg_Result_Haiwan"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.Mg_Result_Nombor"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.Mg_Result_Buah"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.Mg_Game_Haiwan"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.Mg_Game_Warna"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.Mg_Game_Nombor"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.Mg_Game_Buah"
+            android:exported="false" />
+        <activity
+            android:name=".Belajar.HaiwanJawi"
+            android:exported="false" />
+        <activity
+            android:name=".Belajar.NomborJawi"
+            android:exported="false" />
+        <activity
+            android:name=".Belajar.WarnaJawi"
+            android:exported="false" />
+        <activity
             android:name=".Game.VG.FirstVG"
             android:exported="false" />
         <activity
@@ -116,6 +149,15 @@
             android:exported="false" />
         <activity
             android:name=".Fragments.BelajarFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.QuizFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.GameFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.ProfileFragment"
             android:exported="false" />
         <activity
             android:name=".Game.Cw.Cw_nombor"

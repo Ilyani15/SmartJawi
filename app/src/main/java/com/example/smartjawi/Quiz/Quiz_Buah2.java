@@ -1,6 +1,7 @@
 package com.example.smartjawi.Quiz;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -45,6 +46,8 @@ public class Quiz_Buah2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Buah2.this, R.raw.correct);
+                        media.start();
                         Intent intent = new Intent(Quiz_Buah2.this, Quiz_Buah3.class);
                         intent.putExtra("RA", great);
                         startActivity(intent);
@@ -64,6 +67,8 @@ public class Quiz_Buah2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Buah2.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Buah2.this, Quiz_Buah3.class);
                         intent.putExtra("RA", great);
                         startActivity(intent);
@@ -83,6 +88,8 @@ public class Quiz_Buah2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Buah2.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Buah2.this, Quiz_Buah3.class);
                         intent.putExtra("RA", great);
                         startActivity(intent);
@@ -102,6 +109,8 @@ public class Quiz_Buah2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Buah2.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Buah2.this, Quiz_Buah3.class);
                         intent.putExtra("RA", great);
                         startActivity(intent);

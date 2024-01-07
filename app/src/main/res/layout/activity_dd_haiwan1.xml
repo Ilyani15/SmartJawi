@@ -137,7 +137,7 @@
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:background="@color/grey_dark"
-            android:text="ݢاجه"
+            android:text="کوچيڠ"
             android:textAlignment="center"
             android:textColor="@color/grey"
             android:textSize="29dp"

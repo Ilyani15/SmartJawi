@@ -83,6 +83,11 @@ public class Cw_buahan extends AppCompatActivity {
 
         sp = getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
+
+        // Set initial score to 0
+        editor.putString("highscore", "0");
+        editor.apply();
+
         editor.putString("textinput", "");
         editor.apply();
 

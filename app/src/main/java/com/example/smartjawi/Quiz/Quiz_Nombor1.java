@@ -1,6 +1,7 @@
 package com.example.smartjawi.Quiz;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.smartjawi.Fragments.QuizFragment;
+import com.example.smartjawi.Game.DD.DD_Game_Warna4;
 import com.example.smartjawi.R;
 
 public class Quiz_Nombor1 extends AppCompatActivity {
@@ -45,6 +47,8 @@ public class Quiz_Nombor1 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Nombor1.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Nombor1.this, Quiz_Nombor2.class);
                         intent.putExtra("RA", great3);
                         startActivity(intent);
@@ -63,6 +67,8 @@ public class Quiz_Nombor1 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Nombor1.this, R.raw.correct);
+                        media.start();
                         Intent intent = new Intent(Quiz_Nombor1.this, Quiz_Nombor2.class);
                         intent.putExtra("RA", great3);
                         startActivity(intent);
@@ -82,6 +88,8 @@ public class Quiz_Nombor1 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Nombor1.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Nombor1.this, Quiz_Nombor2.class);
                         intent.putExtra("RA", great3);
                         startActivity(intent);
@@ -101,6 +109,8 @@ public class Quiz_Nombor1 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Nombor1.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Nombor1.this, Quiz_Nombor2.class);
                         intent.putExtra("RA", great3);
                         startActivity(intent);

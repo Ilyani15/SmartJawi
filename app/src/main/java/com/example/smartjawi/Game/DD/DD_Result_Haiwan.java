@@ -28,7 +28,7 @@ public class DD_Result_Haiwan extends AppCompatActivity {
 
         textResult = findViewById(R.id.textResult);
 
-        textResult.setText("You Answered "+ getIntent().getIntExtra("RA", 0)+ " / 5");
+        textResult.setText("You Answered "+ getIntent().getIntExtra("RA", 0)+ " / 4");
 
         TextView close = findViewById(R.id.yay);
 

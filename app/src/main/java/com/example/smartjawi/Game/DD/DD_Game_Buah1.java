@@ -24,6 +24,10 @@ public class DD_Game_Buah1 extends AppCompatActivity {
     ImageView img1,img2,img3,img4;
     MediaPlayer correct;
     int i = 0;
+    int great = 0;
+    int receivedData;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +62,8 @@ public class DD_Game_Buah1 extends AppCompatActivity {
         img3.setOnLongClickListener(longclickListener);
         img4.setOnLongClickListener(longclickListener);
 
+        Intent intent = getIntent();
+        receivedData = intent.getIntExtra("RA", great);
 
         correct = MediaPlayer.create(DD_Game_Buah1.this, R.raw.correct);
 
@@ -128,9 +134,15 @@ public class DD_Game_Buah1 extends AppCompatActivity {
             @Override
             public void run() {
                 if (i == 1) {
+                    great = receivedData + 1;
                     correct.start();
+                } else {
+                    great = receivedData + 0;
+                    MediaPlayer media = MediaPlayer.create(DD_Game_Buah1.this, R.raw.wrong);
+                    media.start();
                 }
                 Intent intent = new Intent(DD_Game_Buah1.this, DD_Game_Buah2.class);
+                intent.putExtra("RA", great);
                 startActivity(intent);
                 finish();
             }
@@ -139,7 +151,12 @@ public class DD_Game_Buah1 extends AppCompatActivity {
     }
 
     private void handleDragDropIncorrect() {
+        great = receivedData + 0;
         MediaPlayer media = MediaPlayer.create(DD_Game_Buah1.this, R.raw.wrong);
         media.start();
+        Intent intent = new Intent(DD_Game_Buah1.this, DD_Game_Buah2.class);
+        intent.putExtra("RA", great);
+        startActivity(intent);
+        finish();
     }
 }

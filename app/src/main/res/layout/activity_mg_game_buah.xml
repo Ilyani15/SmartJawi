@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Game.MG.Mg_Game_Buah"
+android:background="@drawable/smartjjawi">
+
+<RelativeLayout
+    android:id="@+id/popup_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--<ImageView
+        android:id="@+id/time_bar_image"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:src="@drawable/time_bar"
+        />-->
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/closebg"
+        app:srcCompat="@drawable/restart" />
+
+    <!--<ImageView
+        android:id="@+id/level_bar_image"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:src="@drawable/level_border" />
+
+    <TextView
+        android:id="@+id/level_bar_text"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginRight="120dp"
+        android:gravity="center"
+        android:shadowColor="#2eaed9"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:text="MUDAH"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />-->
+
+    <RelativeLayout
+        android:id="@+id/level_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/moves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="173dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginBottom="608dp"
+            android:gravity="center"
+            android:text="Moves"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_bar_text"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="120dp"
+            android:gravity="center"
+            android:shadowColor="#2eaed9"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:text="00:60"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+<ImageView
+    android:id="@+id/close"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="31dp"
+    android:background="@drawable/closebg"
+    app:srcCompat="@drawable/close" />
+
+    <include
+        layout="@layout/activity_images"
+        android:layout_width="wrap_content"
+        android:layout_height="381dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="200dp"
+        android:layout_weight="1" />
+
+</RelativeLayout>

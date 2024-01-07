@@ -1,6 +1,7 @@
 package com.example.smartjawi.Quiz;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -34,16 +35,22 @@ public class Quiz_Buah1 extends AppCompatActivity {
         btnOp3 = findViewById(R.id.bawang);
         btnOp4 = findViewById(R.id.tomato);
 
+        Intent intent = getIntent();
+        int receivedData = intent.getIntExtra("RA", great);
         btnOp1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                btnOp1.setBackgroundResource(R.drawable.closebg);
                btnOp2.setBackgroundResource(R.drawable.rightanswer);
+                great = receivedData + 0;
 
                new Handler().postDelayed(new Runnable() {
                    @Override
                    public void run() {
+                       MediaPlayer media = MediaPlayer.create(Quiz_Buah1.this, R.raw.wrong);
+                       media.start();
                        Intent intent = new Intent(Quiz_Buah1.this, Quiz_Buah2.class);
+                       intent.putExtra("RA", great);
                        startActivity(intent);
                        finish();
                    }
@@ -55,10 +62,12 @@ public class Quiz_Buah1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 btnOp2.setBackgroundResource(R.drawable.rightanswer);
-                great = great + 1;
+                great = receivedData + 1;
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Buah1.this, R.raw.correct);
+                        media.start();
                         Intent intent = new Intent(Quiz_Buah1.this, Quiz_Buah2.class);
                         intent.putExtra("RA", great);
                         startActivity(intent);
@@ -73,11 +82,15 @@ public class Quiz_Buah1 extends AppCompatActivity {
             public void onClick(View view) {
                 btnOp3.setBackgroundResource(R.drawable.closebg);
                 btnOp2.setBackgroundResource(R.drawable.rightanswer);
+                great = receivedData + 0;
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Buah1.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Buah1.this, Quiz_Buah2.class);
+                        intent.putExtra("RA", great);
                         startActivity(intent);
                         finish();
                     }
@@ -90,11 +103,15 @@ public class Quiz_Buah1 extends AppCompatActivity {
             public void onClick(View view) {
                 btnOp4.setBackgroundResource(R.drawable.closebg);
                 btnOp2.setBackgroundResource(R.drawable.rightanswer);
+                great = receivedData + 0;
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Buah1.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Buah1.this, Quiz_Buah2.class);
+                        intent.putExtra("RA", great);
                         startActivity(intent);
                         finish();
                     }

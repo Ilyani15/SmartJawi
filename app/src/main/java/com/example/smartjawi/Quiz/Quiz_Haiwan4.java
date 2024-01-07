@@ -1,6 +1,7 @@
 package com.example.smartjawi.Quiz;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -49,6 +50,8 @@ public class Quiz_Haiwan4 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Haiwan4.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Haiwan4.this, Quiz_Haiwan5.class);
                         intent.putExtra("RA", great1);
                         startActivity(intent);
@@ -67,6 +70,8 @@ public class Quiz_Haiwan4 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Haiwan4.this, R.raw.correct);
+                        media.start();
                         Intent intent = new Intent(Quiz_Haiwan4.this, Quiz_Haiwan5.class);
                         intent.putExtra("RA", great1);
                         startActivity(intent);
@@ -86,6 +91,8 @@ public class Quiz_Haiwan4 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Haiwan4.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Haiwan4.this, Quiz_Haiwan5.class);
                         intent.putExtra("RA", great1);
                         startActivity(intent);
@@ -105,6 +112,8 @@ public class Quiz_Haiwan4 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        MediaPlayer media = MediaPlayer.create(Quiz_Haiwan4.this, R.raw.wrong);
+                        media.start();
                         Intent intent = new Intent(Quiz_Haiwan4.this, Quiz_Haiwan5.class);
                         intent.putExtra("RA", great1);
                         startActivity(intent);

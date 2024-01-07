@@ -44,7 +44,7 @@ public class FirstMG extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstMG.this, DD_Game_Haiwan1.class);
+                Intent intent = new Intent(FirstMG.this, Mg_Game_Haiwan.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class FirstMG extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstMG.this, DD_Game_Buah1.class);
+                Intent intent = new Intent(FirstMG.this, Mg_Game_Buah.class);
                 startActivity(intent);
             }
         });
@@ -60,7 +60,7 @@ public class FirstMG extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstMG.this, DD_Game_Warna1.class);
+                Intent intent = new Intent(FirstMG.this, Mg_Game_Warna.class);
                 startActivity(intent);
             }
         });
@@ -68,7 +68,7 @@ public class FirstMG extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstMG.this, DD_Game_Nombor1.class);
+                Intent intent = new Intent(FirstMG.this, Mg_Game_Nombor.class);
                 startActivity(intent);
             }
         });

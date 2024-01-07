@@ -24,6 +24,8 @@ public class DD_Game_Haiwan4 extends AppCompatActivity {
     ImageView img1,img2,img3,img4;
     MediaPlayer correct;
     int i = 0;
+    int great;
+    int receivedData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,8 @@ public class DD_Game_Haiwan4 extends AppCompatActivity {
         img3.setOnLongClickListener(longclickListener);
         img4.setOnLongClickListener(longclickListener);
 
+        Intent intent = getIntent();
+        receivedData = intent.getIntExtra("RA", great);
 
         correct = MediaPlayer.create(DD_Game_Haiwan4.this, R.raw.correct);
 
@@ -129,8 +133,15 @@ public class DD_Game_Haiwan4 extends AppCompatActivity {
             public void run() {
                 if (i == 1) {
                     correct.start();
+                    great = receivedData + 1;
+                    correct.start();
+                } else {
+                    great = receivedData + 0;
+                    MediaPlayer media = MediaPlayer.create(DD_Game_Haiwan4.this, R.raw.wrong);
+                    media.start();
                 }
                 Intent intent = new Intent(DD_Game_Haiwan4.this, DD_Result_Haiwan.class);
+                intent.putExtra("RA", great);
                 startActivity(intent);
                 finish();
             }
@@ -139,7 +150,12 @@ public class DD_Game_Haiwan4 extends AppCompatActivity {
     }
 
     private void handleDragDropIncorrect() {
+        great = receivedData + 0;
         MediaPlayer media = MediaPlayer.create(DD_Game_Haiwan4.this, R.raw.wrong);
         media.start();
+        Intent intent = new Intent(DD_Game_Haiwan4.this, DD_Result_Haiwan.class);
+        intent.putExtra("RA", great);
+        startActivity(intent);
+        finish();
     }
 }
