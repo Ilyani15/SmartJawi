@@ -54,6 +54,10 @@ dependencies {
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("com.google.firebase:firebase-storage")
 
     implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation ("com.squareup.picasso:picasso:2.8")
+    implementation("com.google.firebase:firebase-firestore")
+
 }

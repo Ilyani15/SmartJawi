@@ -36,8 +36,8 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
         android:layout_width="119dp"
         android:layout_height="96dp"
         android:layout_marginTop="24dp"
