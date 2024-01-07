@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.smartjawi.Fragments.BelajarFragment;
+import com.example.smartjawi.Fragments.GameFragment;
+import com.example.smartjawi.Game.Cw.FirstCW;
 import com.example.smartjawi.R;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,6 +35,16 @@ public class HaiwanJawi extends AppCompatActivity {
         btn8 = findViewById(R.id.eight);
         btn9 = findViewById(R.id.nine);
         btn10 = findViewById(R.id.ten);
+
+        ImageView close = findViewById(R.id.close);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HaiwanJawi.this, BelajarFragment.class);
+                startActivity(intent);
+            }
+        });
 
 
         btn1.setOnClickListener(new View.OnClickListener() {

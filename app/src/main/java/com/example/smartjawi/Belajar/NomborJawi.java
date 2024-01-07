@@ -4,10 +4,12 @@ package com.example.smartjawi.Belajar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.view.LayoutInflater;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.smartjawi.Fragments.BelajarFragment;
 import com.example.smartjawi.R;
 
 public class NomborJawi extends AppCompatActivity {
@@ -30,6 +32,15 @@ public class NomborJawi extends AppCompatActivity {
         btn9 = findViewById(R.id.nine);
         btn10 = findViewById(R.id.ten);
 
+        ImageView close = findViewById(R.id.close);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NomborJawi.this, BelajarFragment.class);
+                startActivity(intent);
+            }
+        });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
