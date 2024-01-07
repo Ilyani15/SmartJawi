@@ -157,7 +157,7 @@
     <RelativeLayout
         android:id="@+id/relativelayout"
         android:layout_width="318dp"
-        android:layout_height="190dp"
+        android:layout_height="150dp"
         android:layout_marginTop="19dp"
         android:layout_marginBottom="102dp"
         android:background="@drawable/profile_bg"
@@ -201,6 +201,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/rewards"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="50dp">
@@ -234,6 +235,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/credits"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="100dp">
@@ -244,7 +246,7 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/badge" />
+                android:src="@drawable/copyright" />
 
             <TextView
                 android:id="@+id/textView41"
@@ -253,7 +255,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/fontjawi"
-                android:text="Badges"
+                android:text="Credits"
                 android:textSize="25sp" />
 
             <ImageView
@@ -266,52 +268,9 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="150dp">
 
-            <ImageView
-                android:id="@+id/imageView30"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/question" />
-
-            <TextView
-                android:id="@+id/textView42"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
-                android:text="Help and Information"
-                android:textSize="25sp" />
-
-            <ImageView
-                android:id="@+id/imageView35"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/rightarrow" />
-
-        </LinearLayout>
 
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/gear"
-        app:layout_constraintBottom_toTopOf="@+id/relativelayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toEndOf="@+id/profilepic"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129" />
 
     <Button
         android:id="@+id/logout"
@@ -326,11 +285,13 @@
 
     <ImageView
         android:id="@+id/btn_edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="139dp"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="128dp"
         android:src="@drawable/baseline_create_24"
-        app:layout_constraintStart_toEndOf="@+id/profilepic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
