@@ -13,6 +13,7 @@ import android.widget.RelativeLayout;
 import androidx.fragment.app.Fragment;
 
 import com.example.smartjawi.Belajar.HaiwanJawi;
+import com.example.smartjawi.Belajar.HurufJawi;
 import com.example.smartjawi.Belajar.NomborJawi;
 import com.example.smartjawi.Belajar.WarnaJawi;
 import com.example.smartjawi.Game.Cw.FirstCW;
@@ -40,10 +41,20 @@ public class BelajarFragment extends Fragment {
         btn4 = view.findViewById(R.id.empat);
         btn5 = view.findViewById(R.id.lima);
 
+        ImageView close = view.findViewById(R.id.close);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), HomeFragment.class);
+                startActivity(intent);
+            }
+        });
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FirstCW.class);
+                Intent intent = new Intent(getActivity(), HurufJawi.class);
                 startActivity(intent);
             }
         });
@@ -67,7 +78,7 @@ public class BelajarFragment extends Fragment {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FirstDD.class);
+                Intent intent = new Intent(getActivity(), HaiwanJawi.class);
                 startActivity(intent);
             }
         });
@@ -79,13 +90,6 @@ public class BelajarFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-
-
-
-
-
-
 
         return view;
     }

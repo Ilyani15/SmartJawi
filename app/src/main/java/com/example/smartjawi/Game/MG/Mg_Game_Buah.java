@@ -615,10 +615,10 @@ public class Mg_Game_Buah extends AppCompatActivity {
                             finish();
                         }
                     })
-                    .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
+                    .setNegativeButton("New Game", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intent = new Intent(getApplicationContext(), FirstMG.class);
+                            Intent intent = new Intent(getApplicationContext(), Mg_Game_Buah.class);
                             startActivity(intent);
                             finish();
                         }

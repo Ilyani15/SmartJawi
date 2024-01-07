@@ -3,9 +3,11 @@ package com.example.smartjawi.Belajar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.smartjawi.Fragments.BelajarFragment;
 import com.example.smartjawi.R;
 
 public class WarnaJawi extends AppCompatActivity {
@@ -31,7 +33,15 @@ public class WarnaJawi extends AppCompatActivity {
         btn12 = findViewById(R.id.kelabu);
 
 
+        ImageView close = findViewById(R.id.close);
 
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WarnaJawi.this, BelajarFragment.class);
+                startActivity(intent);
+            }
+        });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
