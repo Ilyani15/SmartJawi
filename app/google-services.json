@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "844683701172",
+    "project_id": "smartjawi-97083",
+    "storage_bucket": "smartjawi-97083.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844683701172:android:c1a606f0bc2e11e18720e1",
+        "android_client_info": {
+          "package_name": "com.example.smartjawi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRvCuun3HCLGFQeW-oEukijME96vBJIS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

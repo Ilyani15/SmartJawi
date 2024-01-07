@@ -11,10 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.smartjawi.Fragments.QuizFragment;
 import com.example.smartjawi.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Quiz_ResultNombor extends AppCompatActivity {
 
-    TextView textResult;
+    TextView textResult, name;
+    FirebaseUser firebaseUser;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -27,6 +30,8 @@ public class Quiz_ResultNombor extends AppCompatActivity {
         setContentView(R.layout.activity_result_nombor);
 
         textResult = findViewById(R.id.textResult);
+        name = findViewById(R.id.name);
+
 
         textResult.setText("You Answered "+ getIntent().getIntExtra("RA", 0)+ " / 5");
 
@@ -40,6 +45,27 @@ public class Quiz_ResultNombor extends AppCompatActivity {
                 finish();
             }
         });
+
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+
+        if (firebaseUser != null) {
+            // The user is authenticated, you can access user information
+            String username = firebaseUser.getDisplayName();
+
+            // Check if the username is available
+            if (username != null && !username.isEmpty()) {
+                name.setText(username);
+            } else {
+                // If the username is not available, you can use the user's email or UID
+                // For example:
+                // String userEmail = firebaseUser.getEmail();
+                // String uid = firebaseUser.getUid();
+                // name.setText("Hello, " + userEmail + "!"); // or name.setText("Hello, " + uid + "!");
+            }
+
+
+        }
 
     }
 }

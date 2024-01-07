@@ -13,12 +13,14 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.smartjawi.Fragments.GameFragment;
+import com.example.smartjawi.model.UserModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Register extends AppCompatActivity {
 
@@ -65,33 +67,57 @@ public class Register extends AppCompatActivity {
 
 
     }
-    private void register(String username, String email, String password, String age){
+    private void register(String username, String email, String password, String age) {
         progressDialog.show();
-        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful() && task.getResult() != null) {
-                    FirebaseUser firebaseUser = task.getResult().getUser();
-                    if (firebaseUser != null) {
-                        UserProfileChangeRequest request = new UserProfileChangeRequest.Builder()
-                                .setDisplayName(username)
-                                .build();
-                        firebaseUser.updateProfile(request).addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                reload();
-                            }
-                        });
-                    }else{
-                        Toast.makeText(getApplicationContext(), "Register fail", Toast.LENGTH_SHORT).show();
+        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+            if (task.isSuccessful() && task.getResult() != null) {
+                FirebaseUser firebaseUser = task.getResult().getUser();
+                if (firebaseUser != null) {
+                    // Update the user profile display name
+                    UserProfileChangeRequest request = new UserProfileChangeRequest.Builder()
+                            .setDisplayName(username)
+                            .build();
+                    firebaseUser.updateProfile(request).addOnCompleteListener(updateProfileTask -> {
+                        if (updateProfileTask.isSuccessful()) {
+                            // Create a UserModel object
+                            UserModel userModel = new UserModel();
+                            userModel.setName(username);
+                            userModel.setEmail(email);
+                            userModel.setAge(age);
+                            userModel.setPassword(password);
 
-                    }
+                            // Store the UserModel in Firestore
+                            storeUserDataInFirestore(userModel, firebaseUser.getUid());
+                        } else {
+                            progressDialog.dismiss();
+                            Toast.makeText(getApplicationContext(), "Update profile failed", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 } else {
-                    Toast.makeText(getApplicationContext(), task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                    Toast.makeText(getApplicationContext(), "Register failed", Toast.LENGTH_SHORT).show();
                 }
+            } else {
+                progressDialog.dismiss();
+                Toast.makeText(getApplicationContext(), task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
+
+    private void storeUserDataInFirestore(UserModel userModel, String userId) {
+        FirebaseFirestore firestore = FirebaseFirestore.getInstance();
+        firestore.collection("users").document(userId).set(userModel)
+                .addOnCompleteListener(task -> {
+                    progressDialog.dismiss();
+                    if (task.isSuccessful()) {
+                        Toast.makeText(getApplicationContext(), "Registration successful", Toast.LENGTH_SHORT).show();
+                        reload();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Firestore write failed", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
     private void reload(){
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }

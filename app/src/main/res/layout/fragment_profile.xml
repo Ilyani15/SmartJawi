@@ -9,8 +9,8 @@
     tools:context=".Fragments.ProfileFragment">
 
 
-    <ImageView
-        android:id="@+id/imageView11"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/boy"
@@ -45,18 +45,18 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/fontjawi"
-                android:text="Full Name"
+                android:text="Name"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView47"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
                 android:fontFamily="@font/beachday"
-                android:text="AHMAD NIK AQIL BIN NIK ANAS" />
+                android:text="" />
 
         </RelativeLayout>
 
@@ -76,14 +76,14 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView48"
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
                 android:fontFamily="@font/beachday"
-                android:text="nikaqil@gmail.com" />
+                android:text="" />
 
         </RelativeLayout>
 
@@ -103,14 +103,14 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView49"
+                android:id="@+id/password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
                 android:fontFamily="@font/beachday"
-                android:text="aqil0605"/>
+                android:text=""/>
         </RelativeLayout>
 
 
@@ -130,14 +130,24 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView50"
+                android:id="@+id/age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
                 android:fontFamily="@font/beachday"
-                android:text="6years old"/>
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textviewage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/beachday"
+                android:text="years old"
+                android:textSize="18dp" />
 
         </RelativeLayout>
 
@@ -298,7 +308,7 @@
         app:layout_constraintBottom_toTopOf="@+id/relativelayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/profilepic"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.129" />
 
@@ -312,5 +322,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="139dp"
+        android:src="@drawable/baseline_create_24"
+        app:layout_constraintStart_toEndOf="@+id/profilepic"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
