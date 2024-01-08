@@ -20,7 +20,7 @@ import com.google.firebase.firestore.Query;
 
 public class ProgressTracking extends AppCompatActivity {
 
-    TextView resultNombor, resultHaiwan, resultWarna, resultBuahan;
+    TextView resultNombor, resultHaiwan, resultWarna, resultBuahan, resultSuai, resultMG, resultVG, resultEja;
     FirebaseUser firebaseUser;
     FirebaseFirestore firestore;
     String userId;
@@ -30,10 +30,14 @@ public class ProgressTracking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_tracking);
 
+        resultSuai = findViewById(R.id.suai);
         resultNombor = findViewById(R.id.nomborjawi);
         resultHaiwan = findViewById(R.id.haiwanjawi);
         resultWarna = findViewById(R.id.warnajawi);
         resultBuahan = findViewById(R.id.tumbuhan);
+        resultMG = findViewById(R.id.kadM);
+        resultVG = findViewById(R.id.BETUL);
+        resultEja = findViewById(R.id.ejaan);
 
         firestore = FirebaseFirestore.getInstance();
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -57,6 +61,10 @@ public class ProgressTracking extends AppCompatActivity {
         retrieveCategoryResult("Haiwan", resultHaiwan);
         retrieveCategoryResult("Warna", resultWarna);
         retrieveCategoryResult("Buahan", resultBuahan);
+        retrieveCategoryResult2("Suai Padan", resultSuai);
+        retrieveCategoryResult3("Kad Memori", resultMG);
+        retrieveCategoryResult4("Betul atau Salah", resultVG);
+        retrieveCategoryResult5("Eja Jawi", resultEja);
     }
 
     private void retrieveCategoryResult(String category, TextView resultTextView) {
@@ -82,7 +90,127 @@ public class ProgressTracking extends AppCompatActivity {
                         }
                     } else {
                         // No quiz result found
-                        resultTextView.setText(category + "0");
+                        resultTextView.setText(category + " Result: 0");
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(ProgressTracking.this, "Failed to retrieve " + category + " result", Toast.LENGTH_SHORT).show();
+                });
+    }
+    private void retrieveCategoryResult2(String category, TextView resultTextView) {
+        DocumentReference documentReference = firestore.collection("users")
+                .document(userId)
+                .collection("drag_drop")
+                .document(category)
+                .collection("attempts")
+                .document("attempt_data");
+
+        // Query to retrieve the latest quiz result
+        documentReference.get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        // Retrieve the quiz result from the document
+                        if (documentSnapshot.contains("result")) {
+                            int quizResult = documentSnapshot.getLong("result").intValue();
+                            // Display the quiz result in the corresponding TextView
+                            resultTextView.setText(category + " Result: " + quizResult);
+                        } else {
+                            // If the document does not contain the "result" field
+                            resultTextView.setText(category + " Result: Data structure is invalid");
+                        }
+                    } else {
+                        // No quiz result found
+                        resultTextView.setText(category + " Result: 0");
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(ProgressTracking.this, "Failed to retrieve " + category + " result", Toast.LENGTH_SHORT).show();
+                });
+    }
+    private void retrieveCategoryResult3(String category, TextView resultTextView) {
+        DocumentReference documentReference = firestore.collection("users")
+                .document(userId)
+                .collection("Memory Game")
+                .document(category)
+                .collection("attempts")
+                .document("attempt_data");
+
+        // Query to retrieve the latest quiz result
+        documentReference.get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        // Retrieve the quiz result from the document
+                        if (documentSnapshot.contains("result")) {
+                            int quizResult = documentSnapshot.getLong("result").intValue();
+                            // Display the quiz result in the corresponding TextView
+                            resultTextView.setText(category + " Result: " + quizResult);
+                        } else {
+                            // If the document does not contain the "result" field
+                            resultTextView.setText(category + " Result: Data structure is invalid");
+                        }
+                    } else {
+                        // No quiz result found
+                        resultTextView.setText(category + " Result: 0");
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(ProgressTracking.this, "Failed to retrieve " + category + " result", Toast.LENGTH_SHORT).show();
+                });
+    }
+    private void retrieveCategoryResult4(String category, TextView resultTextView) {
+        DocumentReference documentReference = firestore.collection("users")
+                .document(userId)
+                .collection("Memory Game")
+                .document(category)
+                .collection("attempts")
+                .document("attempt_data");
+
+        // Query to retrieve the latest quiz result
+        documentReference.get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        // Retrieve the quiz result from the document
+                        if (documentSnapshot.contains("result")) {
+                            int quizResult = documentSnapshot.getLong("result").intValue();
+                            // Display the quiz result in the corresponding TextView
+                            resultTextView.setText(category + " Result: " + quizResult);
+                        } else {
+                            // If the document does not contain the "result" field
+                            resultTextView.setText(category + " Result: Data structure is invalid");
+                        }
+                    } else {
+                        // No quiz result found
+                        resultTextView.setText(category + " Result: 0");
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(ProgressTracking.this, "Failed to retrieve " + category + " result", Toast.LENGTH_SHORT).show();
+                });
+    }
+    private void retrieveCategoryResult5(String category, TextView resultTextView) {
+        DocumentReference documentReference = firestore.collection("users")
+                .document(userId)
+                .collection("Mengeja")
+                .document(category)
+                .collection("attempts")
+                .document("attempt_data");
+
+        // Query to retrieve the latest quiz result
+        documentReference.get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        // Retrieve the quiz result from the document
+                        if (documentSnapshot.contains("result")) {
+                            int quizResult = documentSnapshot.getLong("result").intValue();
+                            // Display the quiz result in the corresponding TextView
+                            resultTextView.setText(category + " Result: " + quizResult);
+                        } else {
+                            // If the document does not contain the "result" field
+                            resultTextView.setText(category + " Result: Data structure is invalid");
+                        }
+                    } else {
+                        // No quiz result found
+                        resultTextView.setText(category + " Result: 0");
                     }
                 })
                 .addOnFailureListener(e -> {

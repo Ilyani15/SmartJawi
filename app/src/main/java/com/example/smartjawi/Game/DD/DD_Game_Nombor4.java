@@ -139,7 +139,7 @@ public class DD_Game_Nombor4 extends AppCompatActivity {
                     MediaPlayer media = MediaPlayer.create(DD_Game_Nombor4.this, R.raw.wrong);
                     media.start();
                 }
-                Intent intent = new Intent(DD_Game_Nombor4.this, DD_Result_Nombor.class);
+                Intent intent = new Intent(DD_Game_Nombor4.this, DD_Result_Warna.class);
                 intent.putExtra("RA", great);
                 startActivity(intent);
                 finish();
@@ -152,7 +152,7 @@ public class DD_Game_Nombor4 extends AppCompatActivity {
         great = receivedData + 0;
         MediaPlayer media = MediaPlayer.create(DD_Game_Nombor4.this, R.raw.wrong);
         media.start();
-        Intent intent = new Intent(DD_Game_Nombor4.this, DD_Result_Nombor.class);
+        Intent intent = new Intent(DD_Game_Nombor4.this, DD_Result_Warna.class);
         intent.putExtra("RA", great);
         startActivity(intent);
         finish();

@@ -14,13 +14,18 @@ import com.example.smartjawi.Fragments.QuizFragment;
 import com.example.smartjawi.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.HashMap;
+import java.util.Map;
 
 public class ResultVG extends AppCompatActivity {
 
     TextView textResult, name;
     FirebaseUser firebaseUser;
-
+    FirebaseFirestore firestore;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -41,6 +46,9 @@ public class ResultVG extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Save the game result to Firestore
+                saveGameResultToFirestore(getIntent().getIntExtra("RA", 0));
+
                 Intent intent = new Intent(ResultVG.this, FirstVG.class);
                 startActivity(intent);
                 finish();
@@ -48,7 +56,7 @@ public class ResultVG extends AppCompatActivity {
         });
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-
+        firestore = FirebaseFirestore.getInstance();
 
         if (firebaseUser != null) {
             // The user is authenticated, you can access user information
@@ -64,8 +72,33 @@ public class ResultVG extends AppCompatActivity {
                 // String uid = firebaseUser.getUid();
                 // name.setText("Hello, " + userEmail + "!"); // or name.setText("Hello, " + uid + "!");
             }
+        }
+    }
 
+    private void saveGameResultToFirestore(int result) {
+        if (firebaseUser != null) {
+            String userId = firebaseUser.getUid();
+            CollectionReference collectionReference = firestore.collection("users")
+                    .document(userId)
+                    .collection("Vote Game"); // Adjust this path as needed
 
+            // Reference to the game_data document
+            DocumentReference gameDataRef = collectionReference.document("Betul atau Salah");
+
+            // Save the attempt count and game result
+            Map<String, Object> data = new HashMap<>();
+            data.put("attempts", 1); // Set attempt count to 1
+            data.put("result", result); // Save the game result
+
+            // Use set to overwrite the existing document or create a new one
+            gameDataRef.set(data)
+                    .addOnSuccessListener(aVoid -> {
+                        // Game result and attempt count saved successfully
+                        Toast.makeText(ResultVG.this, "Game result and attempt count saved successfully", Toast.LENGTH_SHORT).show();
+                    })
+                    .addOnFailureListener(e -> {
+                        Toast.makeText(ResultVG.this, "Failed to save game result and attempt count", Toast.LENGTH_SHORT).show();
+                    });
         }
     }
 }

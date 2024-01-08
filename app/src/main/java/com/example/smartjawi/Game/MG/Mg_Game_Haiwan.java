@@ -608,7 +608,7 @@ public class Mg_Game_Haiwan extends AppCompatActivity {
                     .setPositiveButton("View Review", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intent = new Intent(getApplicationContext(), Mg_Result_Haiwan.class);
+                            Intent intent = new Intent(getApplicationContext(), Mg_Result_Warna.class);
                             intent.putExtra("RA", result);
                             startActivity(intent);
                             finish();

@@ -609,7 +609,7 @@ public class Mg_Game_Buah extends AppCompatActivity {
                     .setPositiveButton("View Result", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intent = new Intent(getApplicationContext(), Mg_Result_Buah.class);
+                            Intent intent = new Intent(getApplicationContext(), Mg_Result_Warna.class);
                             intent.putExtra("RA", result);
                             startActivity(intent);
                             finish();

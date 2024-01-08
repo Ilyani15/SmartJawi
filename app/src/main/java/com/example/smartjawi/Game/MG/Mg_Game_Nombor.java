@@ -609,7 +609,7 @@ import java.util.Locale;
                         .setPositiveButton("View Result", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Intent intent = new Intent(getApplicationContext(), Mg_Result_Nombor.class);
+                                Intent intent = new Intent(getApplicationContext(), Mg_Result_Warna.class);
                                 intent.putExtra("RA", result);
                                 startActivity(intent);
                                 finish();

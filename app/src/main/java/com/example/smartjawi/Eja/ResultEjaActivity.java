@@ -1,32 +1,31 @@
 package com.example.smartjawi.Eja;
 
-        import android.annotation.SuppressLint;
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.view.View;
-        import android.view.WindowManager;
-        import android.widget.TextView;
-        import android.widget.Toast;
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.TextView;
+import android.widget.Toast;
 
-        import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
-        import com.example.smartjawi.Fragments.QuizFragment;
-        import com.example.smartjawi.R;
-        import com.google.firebase.auth.FirebaseAuth;
-        import com.google.firebase.auth.FirebaseUser;
-        import com.google.firebase.firestore.CollectionReference;
-        import com.google.firebase.firestore.DocumentReference;
-        import com.google.firebase.firestore.FirebaseFirestore;
+import com.example.smartjawi.Fragments.QuizFragment;
+import com.example.smartjawi.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
-        import java.util.HashMap;
-        import java.util.Map;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ResultEjaActivity extends AppCompatActivity {
 
     TextView textResult, name;
     FirebaseUser firebaseUser;
     FirebaseFirestore firestore;
-    String id = "warna";
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -47,10 +46,10 @@ public class ResultEjaActivity extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Save the quiz result to Firestore
-                saveQuizResult(getIntent().getIntExtra("RA", 0));
+                // Save the eja result to Firestore
+                saveEjaResultToFirestore(getIntent().getIntExtra("RA", 0));
 
-                Intent intent = new Intent(com.example.smartjawi.Eja.ResultEjaActivity.this, QuizFragment.class);
+                Intent intent = new Intent(ResultEjaActivity.this, QuizFragment.class);
                 startActivity(intent);
                 finish();
             }
@@ -76,59 +75,31 @@ public class ResultEjaActivity extends AppCompatActivity {
         }
     }
 
-    private void saveQuizResult(int result) {
+    private void saveEjaResultToFirestore(int result) {
         if (firebaseUser != null) {
             String userId = firebaseUser.getUid();
-            CollectionReference collectionReference = firestore.collection("users").document(userId).collection("quiz").document(id).collection("attempts");
+            CollectionReference collectionReference = firestore.collection("users")
+                    .document(userId)
+                    .collection("Mengeja"); // Adjust this path as needed
 
-            // Retrieve existing attempt count
-            collectionReference.document("attempt_data").get()
-                    .addOnSuccessListener(documentSnapshot -> {
-                        if (documentSnapshot.exists()) {
-                            // Document exists, retrieve the attempt count
-                            Integer currentAttempts = documentSnapshot.getLong("attempts").intValue();
+            // Reference to the attempt_data document
+            DocumentReference attemptDataRef = collectionReference.document("Eja Jawi");
 
-                            // Increment the attempt count
-                            int newAttempts = currentAttempts + 1;
+            // Save the attempt count and eja result
+            Map<String, Object> data = new HashMap<>();
+            data.put("attempts", 1); // Set attempt count to 1
+            data.put("result", result); // Save the eja result
 
-                            // Update the document with the new attempt count
-                            Map<String, Object> data = new HashMap<>();
-                            data.put("attempts", newAttempts);
-
-                            collectionReference.document("attempt_data").set(data)
-                                    .addOnSuccessListener(aVoid -> {
-                                        // Quiz result and attempt count saved successfully
-                                        Toast.makeText(com.example.smartjawi.Eja.ResultEjaActivity.this, "Quiz result and attempt count saved successfully", Toast.LENGTH_SHORT).show();
-                                    })
-                                    .addOnFailureListener(e -> {
-                                        Toast.makeText(com.example.smartjawi.Eja.ResultEjaActivity.this, "Failed to save attempt count", Toast.LENGTH_SHORT).show();
-                                    });
-                        } else {
-                            // Document does not exist, create a new one with attempt count set to 1
-                            Map<String, Object> data = new HashMap<>();
-                            data.put("attempts", 1);
-
-                            collectionReference.document("attempt_data").set(data)
-                                    .addOnSuccessListener(aVoid -> {
-                                        // Quiz result and attempt count saved successfully
-                                        Toast.makeText(com.example.smartjawi.Eja.ResultEjaActivity.this, "Quiz result and attempt count saved successfully", Toast.LENGTH_SHORT).show();
-                                    })
-                                    .addOnFailureListener(e -> {
-                                        Toast.makeText(com.example.smartjawi.Eja.ResultEjaActivity.this, "Failed to save attempt count", Toast.LENGTH_SHORT).show();
-                                    });
-                        }
+            // Use set to overwrite the existing document or create a new one
+            attemptDataRef.set(data)
+                    .addOnSuccessListener(aVoid -> {
+                        // Eja result and attempt count saved successfully
+                        Toast.makeText(ResultEjaActivity.this, "Eja result and attempt count saved successfully", Toast.LENGTH_SHORT).show();
                     })
                     .addOnFailureListener(e -> {
-                        Toast.makeText(com.example.smartjawi.Eja.ResultEjaActivity.this, "Failed to retrieve attempt count", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ResultEjaActivity.this, "Failed to save eja result and attempt count", Toast.LENGTH_SHORT).show();
                     });
-
-            // Save the quiz result as before
-            Map<String, Object> quizResultData = new HashMap<>();
-            quizResultData.put("result", result);
-            collectionReference.add(quizResultData);
         }
     }
-
-
 
 }
