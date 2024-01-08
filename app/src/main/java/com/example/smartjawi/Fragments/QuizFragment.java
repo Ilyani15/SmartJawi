@@ -29,6 +29,7 @@ public class QuizFragment extends Fragment {
         context = getActivity();
         View view = inflater.inflate(R.layout.fragment_quiz, container, false);
 
+
         btn1 = view.findViewById(R.id.dua);  // Corrected line
 
         btn1.setOnClickListener(new View.OnClickListener() {
