@@ -34,6 +34,12 @@
             android:name=".WarnaSection.WarnaActivity"
             android:exported="false" />
         <activity
+            android:name=".HaiwanSection.HaiwanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuahSection.BuahActivity"
+            android:exported="false" />
+        <activity
             android:name=".Eja.FirstEja"
             android:exported="false" />
         <activity
@@ -104,9 +110,6 @@
             android:exported="false" />
         <activity
             android:name=".Game.VG.FirstVG"
-            android:exported="false" />
-        <activity
-            android:name=".Game.SG.FirstSG"
             android:exported="false" />
         <activity
             android:name=".Game.DD.DD_Result_Nombor"

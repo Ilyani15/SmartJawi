@@ -20,20 +20,21 @@ android:layout_margin="16dp">
         android:text="NAMA HAIWAN"
         android:layout_marginBottom="10dp"
         android:textColor="@color/black"
-        android:textSize="26sp"
+        android:textSize="40sp"
         android:textStyle="bold"/>
 </LinearLayout>
 
 <LinearLayout
-    android:layout_marginTop="70dp"
+    android:layout_marginTop="100dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_gravity="center">
 
     <ImageView
         android:id="@+id/Huruf_img"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
         android:background="@color/Transparent"
         android:scaleType="fitCenter"
