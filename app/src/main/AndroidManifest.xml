@@ -13,25 +13,79 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
-            android:name=".Game.VG.ResultVG"
+            android:name=".Game.VG.Intro_VG"
             android:exported="false" />
         <activity
-            android:name=".Game.VG.BetulSalahWarna5"
+            android:name=".Game.MG.Intro_MG"
             android:exported="false" />
         <activity
-            android:name=".Game.VG.BetulSalahWarna4"
+            android:name=".Game.DD.Intro_DD"
             android:exported="false" />
         <activity
-            android:name=".Game.VG.BetulSalahWarna3"
+            android:name=".Game.VG.BetulSalahNombor1"
             android:exported="false" />
         <activity
-            android:name=".Game.VG.BetulSalahWarna2"
+            android:name=".Game.VG.BetulSalahNombor2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahNombor3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahNombor4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalah5"
             android:exported="false" />
         <activity
             android:name=".Game.VG.BetulSalahWarna1"
             android:exported="false" />
         <activity
+            android:name=".Game.VG.BetulSalahWarna2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna5"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.ResultVG"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan5"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan1"
+            android:exported="false" />
+        <activity
             android:name=".NomborJawi.NomborJawiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur1"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur5"
             android:exported="false" />
         <activity
             android:name=".WarnaSection.WarnaActivity"
