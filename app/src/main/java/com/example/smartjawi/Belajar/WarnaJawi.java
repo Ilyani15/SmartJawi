@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.smartjawi.Fragments.BelajarFragment;
 import com.example.smartjawi.R;
+import com.example.smartjawi.WarnaSection.WarnaActivity;
 
 public class WarnaJawi extends AppCompatActivity {
 
@@ -29,7 +30,7 @@ public class WarnaJawi extends AppCompatActivity {
         btn8 = findViewById(R.id.merah);
         btn9 = findViewById(R.id.biru);
         btn10 = findViewById(R.id.koko);
-        btn11 = findViewById(R.id.oren);
+        btn11 = findViewById(R.id.orange);
         btn12 = findViewById(R.id.kelabu);
 
 
@@ -47,7 +48,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +56,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +64,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -71,7 +72,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -79,7 +80,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -87,7 +88,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -95,7 +96,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -103,7 +104,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -111,7 +112,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -119,7 +120,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -127,7 +128,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });
@@ -135,7 +136,7 @@ public class WarnaJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(WarnaJawi.this, HaiwanJawi.class);
+                Intent intent = new Intent(WarnaJawi.this, WarnaActivity.class);
                 startActivity(intent);
             }
         });

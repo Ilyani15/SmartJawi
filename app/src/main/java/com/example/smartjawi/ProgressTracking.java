@@ -17,14 +17,12 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
-
 public class ProgressTracking extends AppCompatActivity {
 
-    TextView resultNombor;
+    TextView resultNombor, resultHaiwan, resultWarna, resultBuahan;
     FirebaseUser firebaseUser;
     FirebaseFirestore firestore;
     String userId;
-    String id = "warna";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +30,16 @@ public class ProgressTracking extends AppCompatActivity {
         setContentView(R.layout.activity_progress_tracking);
 
         resultNombor = findViewById(R.id.nomborjawi);
+        resultHaiwan = findViewById(R.id.haiwanjawi);
+        resultWarna = findViewById(R.id.warnajawi);
+        resultBuahan = findViewById(R.id.buahanjawi);
+
         firestore = FirebaseFirestore.getInstance();
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
         if (firebaseUser != null) {
             userId = firebaseUser.getUid();
-            retrieveQuizResult();
+            retrieveQuizResults();
         }
 
         ImageView close = findViewById(R.id.close);
@@ -49,8 +51,15 @@ public class ProgressTracking extends AppCompatActivity {
         });
     }
 
-    private void retrieveQuizResult() {
-        CollectionReference collectionReference = firestore.collection("users").document(userId).collection("quiz").document(id).collection("attempts");
+    private void retrieveQuizResults() {
+        retrieveCategoryResult("nombor", resultNombor);
+        retrieveCategoryResult("haiwan", resultHaiwan);
+        retrieveCategoryResult("warna", resultWarna);
+        retrieveCategoryResult("buahan", resultBuahan);
+    }
+
+    private void retrieveCategoryResult(String category, TextView resultTextView) {
+        CollectionReference collectionReference = firestore.collection("users").document(userId).collection("quiz").document(category).collection("attempts");
 
         // Query to retrieve the latest quiz result
         collectionReference.orderBy("timestamp", Query.Direction.DESCENDING).limit(1)
@@ -61,16 +70,15 @@ public class ProgressTracking extends AppCompatActivity {
                         DocumentSnapshot documentSnapshot = queryDocumentSnapshots.getDocuments().get(0);
                         int quizResult = documentSnapshot.getLong("result").intValue();
 
-                        // Display the quiz result in the TextView
-                        resultNombor.setText("Quiz Result: " + quizResult);
+                        // Display the quiz result in the corresponding TextView
+                        resultTextView.setText(category + quizResult);
                     } else {
                         // No quiz result found
-                        resultNombor.setText("No quiz result available");
+                        resultTextView.setText(category + " Result: No data available");
                     }
                 })
                 .addOnFailureListener(e -> {
-                    Toast.makeText(ProgressTracking.this, "Failed to retrieve quiz result", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProgressTracking.this, "Failed to retrieve " + category + " result", Toast.LENGTH_SHORT).show();
                 });
     }
 }
-

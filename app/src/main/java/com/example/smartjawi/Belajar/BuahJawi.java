@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.smartjawi.BuahSection.BuahActivity;
 import com.example.smartjawi.Fragments.BelajarFragment;
 import com.example.smartjawi.R;
 import android.content.Intent;
@@ -60,7 +61,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -68,7 +69,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -76,7 +77,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -84,7 +85,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -92,7 +93,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -100,7 +101,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -108,7 +109,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -116,7 +117,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -124,7 +125,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -132,7 +133,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -140,7 +141,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -148,7 +149,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -156,7 +157,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -164,7 +165,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -172,7 +173,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -180,7 +181,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -188,7 +189,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -196,7 +197,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -204,7 +205,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -212,7 +213,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -220,7 +221,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -228,7 +229,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });
@@ -236,7 +237,7 @@ public class BuahJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(BuahJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(BuahJawi.this, BuahActivity.class);
                 startActivity(intent);
             }
         });

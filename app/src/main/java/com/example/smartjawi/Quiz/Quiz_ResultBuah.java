@@ -25,7 +25,7 @@ public class Quiz_ResultBuah extends AppCompatActivity {
     TextView textResult, name;
     FirebaseUser firebaseUser;
     FirebaseFirestore firestore;
-    String id = "haiwan";
+    String id = "buahan";
 
     @SuppressLint("SetTextI18n")
     @Override

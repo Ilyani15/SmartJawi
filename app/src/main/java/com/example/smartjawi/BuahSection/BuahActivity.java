@@ -1,23 +1,25 @@
-package com.example.smartjawi.WarnaSection;
+package com.example.smartjawi.BuahSection;
 
-        import android.media.MediaPlayer;
-        import android.os.Bundle;
-        import android.view.View;
-        import android.widget.ImageButton;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager2.widget.ViewPager2;
 
-        import androidx.appcompat.app.AppCompatActivity;
-        import androidx.fragment.app.FragmentTransaction;
-        import androidx.viewpager2.widget.ViewPager2;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
-        import com.example.smartjawi.Fragments.BelajarFragment;
-        import com.example.smartjawi.R;
+import com.example.smartjawi.Fragments.BelajarFragment;
+import com.example.smartjawi.HaiwanSection.VPAdapterHaiwan;
+import com.example.smartjawi.HaiwanSection.VPItemHaiwan;
+import com.example.smartjawi.R;
 
-        import java.util.ArrayList;
+import java.util.ArrayList;
 
-public class WarnaActivity extends AppCompatActivity {
+public class BuahActivity extends AppCompatActivity {
 
     ViewPager2 viewPager2hijaiyah;
-    ArrayList<VPItemWarna> viewPagerItemWarnaArrayList;
+    ArrayList<VPItemHaiwan> viewPagerItemWarnaArrayList;
     private MediaPlayer mediaPlayerHijaiyah;
 
     @Override
@@ -26,18 +28,18 @@ public class WarnaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hijaiyah);
 
         viewPager2hijaiyah = findViewById(R.id.vpHijaiyah);
-        int[] imagesHijaiyah = {R.drawable.yellow, R.drawable.green, R.drawable.blue, R.drawable.red, R.drawable.grey, R.drawable.gold, R.drawable.black, R.drawable.white, R.drawable.brown, R.drawable.pink, R.drawable.oren, R.drawable.purple};
-        String[] headingHijaiyah = {"کونيڠ", "هيجاو", "بيرو", "ميرە", "کلابو", "امس", "هيتم","ڤوتيه", "چوکلت","ميرە جمبو","اورين","اوڠݢو",};
+        int[] imagesHijaiyah = {R.drawable.dragonfruit, R.drawable.corn, R.drawable.cherries, R.drawable.banana, R.drawable.apple, R.drawable.orange, R.drawable.mango, R.drawable.kiwi, R.drawable.grapes, R.drawable.durian, R.drawable.cabbage, R.drawable.bellpepper, R.drawable.watermelon, R.drawable.strawberry, R.drawable.pineapple, R.drawable.potato, R.drawable.pea, R.drawable.garlic, R.drawable.eggplant, R.drawable.carrot, R.drawable.tomato, R.drawable.spinach, R.drawable.pumpkin};
+        String[] headingHijaiyah = {"بواە ناݢ", "جاݢوڠ", "بواە ", "بواە ڤيسڠ", "بواە ايڤل", "بواە اورين", "بواە مڠݢا","بواە کيوي", "بواە اڠݢور","بواە دورين","سايور کوبيس","لادا بسر","بواە تمبيکاي","بواە ستروبيري","بواە نانس","اوبي کنتڠ","کاچڠ هيجاو","باواڠ ڤوتيه","تروڠ","لوبق ميرە","بواە توماتو","سايور ساوي","بواە لابو"};
 
 
         viewPagerItemWarnaArrayList = new ArrayList<>();
         for (int i = 0; i < imagesHijaiyah.length; i++) {
-            VPItemWarna viewPagerItemHijaiyah = new VPItemWarna(imagesHijaiyah[i], headingHijaiyah[i]);
+            VPItemHaiwan viewPagerItemHijaiyah = new VPItemHaiwan(imagesHijaiyah[i], headingHijaiyah[i]);
             viewPagerItemWarnaArrayList.add(viewPagerItemHijaiyah);
         }
 
-        VPAdapterWarna vpAdapterWarna = new VPAdapterWarna(viewPagerItemWarnaArrayList);
-        viewPager2hijaiyah.setAdapter(vpAdapterWarna);
+        VPAdapterHaiwan VPAdapterHaiwan = new VPAdapterHaiwan(viewPagerItemWarnaArrayList);
+        viewPager2hijaiyah.setAdapter(VPAdapterHaiwan);
         viewPager2hijaiyah.setClipToPadding(false);
         viewPager2hijaiyah.setClipChildren(false);
         viewPager2hijaiyah.setOffscreenPageLimit(2);
@@ -94,7 +96,7 @@ public class WarnaActivity extends AppCompatActivity {
     }
     private int getAudioResourceIdForHJ(int position) {
         String[] HJAudioFiles = {
-                "kuning", "hijau", "biru", "merah", "kelabu", "emas", "hitam", "putih", "coklat", "merah_jambu", "oren", "ungu",
+                "buah_naga", "jagung", "buah_ceri", "buah_pisang", "buah_epal", "buah_oren", "buah_mangga", "kiwi", "buah_anggur", "buah_durian", "sayur_kubis", "lada_besar", "buah_tembikai", "buah_strawberi", "buah_nenas", "ubi_kentang", "kacang_hijau", "bawang_putih", "terung", "lobak_merah", "buah_tomato", "sayur_sawi", "buah_labu",
         };
 
         // Get the resource name for the current alphabet

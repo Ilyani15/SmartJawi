@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.smartjawi.Belajar.BuahJawi;
 import com.example.smartjawi.Belajar.HaiwanJawi;
 import com.example.smartjawi.Belajar.HurufJawi;
 import com.example.smartjawi.Belajar.NomborJ;
@@ -74,7 +75,7 @@ public class BelajarFragment extends Fragment {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), HaiwanJawi.class);
+                Intent intent = new Intent(getActivity(), BuahJawi.class);
                 startActivity(intent);
             }
         });

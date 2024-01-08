@@ -55,7 +55,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +63,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -71,7 +71,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -79,7 +79,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -87,7 +87,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -95,7 +95,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -103,7 +103,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -111,7 +111,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -119,7 +119,7 @@ public class NomborJ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
