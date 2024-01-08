@@ -14,12 +14,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.smartjawi.Belajar.HaiwanJawi;
 import com.example.smartjawi.Belajar.HurufJawi;
-import com.example.smartjawi.Belajar.NomborJawi;
+import com.example.smartjawi.Belajar.NomborJ;
 import com.example.smartjawi.Belajar.WarnaJawi;
-import com.example.smartjawi.Game.Cw.FirstCW;
-import com.example.smartjawi.Game.DD.FirstDD;
-import com.example.smartjawi.Game.MG.FirstMG;
-import com.example.smartjawi.MainActivity;
 import com.example.smartjawi.R;
 
 public class BelajarFragment extends Fragment {
@@ -86,7 +82,7 @@ public class BelajarFragment extends Fragment {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), NomborJawi.class);
+                Intent intent = new Intent(getActivity(), NomborJ.class);
                 startActivity(intent);
             }
         });

@@ -5,16 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.smartjawi.Fragments.BelajarFragment;
-import com.example.smartjawi.Fragments.GameFragment;
-import com.example.smartjawi.Game.Cw.FirstCW;
 import com.example.smartjawi.R;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class HaiwanJawi extends AppCompatActivity {
 
@@ -59,7 +55,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });
@@ -67,7 +63,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });
@@ -75,7 +71,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });
@@ -83,7 +79,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });
@@ -91,7 +87,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });
@@ -99,7 +95,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });
@@ -107,7 +103,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });
@@ -115,7 +111,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });
@@ -123,7 +119,7 @@ public class HaiwanJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HaiwanJawi.this, NomborJawi.class);
+                Intent intent = new Intent(HaiwanJawi.this, NomborJ.class);
                 startActivity(intent);
             }
         });

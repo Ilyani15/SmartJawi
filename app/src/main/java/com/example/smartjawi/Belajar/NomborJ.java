@@ -6,20 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.view.LayoutInflater;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.smartjawi.Fragments.BelajarFragment;
+import com.example.smartjawi.NomborJawi.NomborJawiActivity;
 import com.example.smartjawi.R;
 
-public class NomborJawi extends AppCompatActivity {
+public class NomborJ extends AppCompatActivity {
 
     LinearLayout btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nombor_jawi);
+        setContentView(R.layout.activity_nombor_j);
 
         btn1 = findViewById(R.id.one);
         btn2 = findViewById(R.id.two);
@@ -37,7 +38,7 @@ public class NomborJawi extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NomborJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(NomborJ.this, BelajarFragment.class);
                 startActivity(intent);
             }
         });
@@ -46,7 +47,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, NomborJawiActivity.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +55,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });
@@ -62,7 +63,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +71,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });
@@ -78,7 +79,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });
@@ -86,7 +87,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });
@@ -94,7 +95,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });
@@ -102,7 +103,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });
@@ -110,7 +111,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });
@@ -118,7 +119,7 @@ public class NomborJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(NomborJawi.this, WarnaJawi.class);
+                Intent intent = new Intent(NomborJ.this, WarnaJawi.class);
                 startActivity(intent);
             }
         });

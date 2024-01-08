@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomborHeading"
+            android:layout_gravity="center"
+            android:fontFamily="@font/brandon_grotesque_black"
+            android:text="NOMBOR"
+            android:textSize="26dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Nombor_img"
+            android:layout_below="@id/hijaiyahHeading"
+            android:scaleType="centerInside"
+            android:src="@drawable/gambar_satu"/>
+    </LinearLayout>
+
+</LinearLayout>
