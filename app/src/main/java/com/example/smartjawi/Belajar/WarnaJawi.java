@@ -29,7 +29,7 @@ public class WarnaJawi extends AppCompatActivity {
         btn8 = findViewById(R.id.merah);
         btn9 = findViewById(R.id.biru);
         btn10 = findViewById(R.id.koko);
-        btn11 = findViewById(R.id.orange);
+        btn11 = findViewById(R.id.oren);
         btn12 = findViewById(R.id.kelabu);
 
 

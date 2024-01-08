@@ -1,4 +1,8 @@
-package com.example.smartjawi.Eja;
+package com.example.smartjawi.Game.Cw;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -12,16 +16,14 @@ import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
+import com.example.smartjawi.Eja.BgSoundService;
+import com.example.smartjawi.Eja.FirstEja;
 import com.example.smartjawi.Eja.utils.CheckBgEja;
 import com.example.smartjawi.Fragments.GameFragment;
 import com.example.smartjawi.R;
 
+public class Intro_Cw extends AppCompatActivity {
 
-public class EjaActivity extends AppCompatActivity {
 
     private Button gameButton;
     public static String PACKAGE_NAME;
@@ -53,7 +55,7 @@ public class EjaActivity extends AppCompatActivity {
 
         gameButton = findViewById(R.id.btn_play);
         gameButton.setOnClickListener(view -> {
-            Intent intentnew = new Intent(this, FirstEja.class);
+            Intent intentnew = new Intent(this, FirstCW.class);
             startActivity(intentnew);
         });
         gameButton = findViewById(R.id.btn_quit);

@@ -13,6 +13,30 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
+            android:name=".WarnaSection.WarnaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Eja.FirstEja"
+            android:exported="false" />
+        <activity
+            android:name=".Game.Cw.Intro_Cw"
+            android:exported="false" />
+        <activity
+            android:name=".HijaiyahSection.HijaiyahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Eja.EjaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Eja.QuestionEjaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Eja.ResultEjaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Eja.wonEja"
+            android:exported="false" />
+        <activity
             android:name=".Credits"
             android:exported="false" />
         <activity

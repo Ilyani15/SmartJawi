@@ -10,7 +10,9 @@ import android.widget.RelativeLayout;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.smartjawi.Eja.EjaActivity;
 import com.example.smartjawi.Game.Cw.FirstCW;
+import com.example.smartjawi.Game.Cw.Intro_Cw;
 import com.example.smartjawi.Game.DD.FirstDD;
 import com.example.smartjawi.Game.MG.FirstMG;
 import com.example.smartjawi.R;
@@ -29,11 +31,12 @@ public class GameFragment extends Fragment {
         btn1 = view.findViewById(R.id.dua);
         btn2 = view.findViewById(R.id.satu);
         btn3 = view.findViewById(R.id.tiga);
+        btn4 = view.findViewById(R.id.empat);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FirstCW.class);
+                Intent intent = new Intent(getActivity(), Intro_Cw.class);
                 startActivity(intent);
             }
         });
@@ -50,6 +53,14 @@ public class GameFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), FirstDD.class);
+                startActivity(intent);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), EjaActivity.class);
                 startActivity(intent);
             }
         });

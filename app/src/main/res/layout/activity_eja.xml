@@ -6,7 +6,7 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     tools:context=".Eja.EjaActivity"
-    android:background="@drawable/bg_eja_main">
+    android:background="@drawable/smartjjawi">
 
     <FrameLayout
         android:id="@+id/containerGame"

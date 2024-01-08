@@ -60,6 +60,8 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+
                 android:layout_gravity="center"
                 android:src="@drawable/apple" />
 
@@ -88,6 +90,8 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/banana" />
         </LinearLayout>
@@ -115,6 +119,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/cherries" />
 
@@ -143,6 +148,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/corn" />
         </LinearLayout>
@@ -170,6 +176,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/dragonfruit" />
         </LinearLayout>
@@ -197,6 +204,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/durian"/>
         </LinearLayout>
@@ -224,6 +232,8 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/grapes" />
         </LinearLayout>
@@ -251,6 +261,8 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/kiwi" />
         </LinearLayout>
@@ -278,6 +290,8 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/mango" />
         </LinearLayout>
@@ -305,6 +319,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/orange" />
         </LinearLayout>
@@ -332,6 +347,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/pineapple" />
         </LinearLayout>
@@ -359,6 +375,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/strawberry" />
         </LinearLayout>
@@ -386,6 +403,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/watermelon" />
         </LinearLayout>
@@ -413,6 +431,8 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/bellpepper" />
         </LinearLayout>
@@ -440,6 +460,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/cabbage" />
         </LinearLayout>
@@ -467,6 +488,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/carrot" />
         </LinearLayout>
@@ -494,6 +516,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/eggplant" />
         </LinearLayout>
@@ -521,6 +544,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/garlic" />
         </LinearLayout>
@@ -548,6 +572,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/pea" />
         </LinearLayout>
@@ -575,6 +600,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/potato" />
         </LinearLayout>
@@ -602,6 +628,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/pumpkin" />
         </LinearLayout>
@@ -629,6 +656,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/spinach" />
         </LinearLayout>
@@ -656,6 +684,7 @@ tools:context=".Belajar.BuahJawi">
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/tomato" />
         </LinearLayout>
