@@ -1,4 +1,4 @@
-package com.example.smartjawi.Game.Cw;
+package com.example.smartjawi.Game.VG;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -17,12 +17,12 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.example.smartjawi.Eja.BgSoundService;
-import com.example.smartjawi.Eja.FirstEja;
 import com.example.smartjawi.Eja.utils.CheckBgEja;
 import com.example.smartjawi.Fragments.GameFragment;
+import com.example.smartjawi.Game.Cw.FirstCW;
 import com.example.smartjawi.R;
 
-public class Intro_Cw extends AppCompatActivity {
+public class Intro_VG extends AppCompatActivity {
 
 
     private Button gameButton;
@@ -35,7 +35,7 @@ public class Intro_Cw extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         PACKAGE_NAME = getApplicationContext().getPackageName();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro_cw);
+        setContentView(R.layout.activity_intro_vg);
 
         sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         ed = sp.edit();

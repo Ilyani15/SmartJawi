@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import androidx.fragment.app.Fragment;
@@ -14,9 +15,12 @@ import com.example.smartjawi.Eja.EjaActivity;
 import com.example.smartjawi.Game.Cw.FirstCW;
 import com.example.smartjawi.Game.Cw.Intro_Cw;
 import com.example.smartjawi.Game.DD.FirstDD;
+import com.example.smartjawi.Game.DD.Intro_DD;
 import com.example.smartjawi.Game.MG.FirstMG;
+import com.example.smartjawi.Game.MG.Intro_MG;
 import com.example.smartjawi.Game.VG.BetulSalahWarna1;
 import com.example.smartjawi.Game.VG.FirstVG;
+import com.example.smartjawi.Game.VG.Intro_VG;
 import com.example.smartjawi.R;
 
 public class GameFragment extends Fragment {
@@ -36,10 +40,20 @@ public class GameFragment extends Fragment {
         btn4 = view.findViewById(R.id.empat);
         btn5 = view.findViewById(R.id.lima);
 
+        ImageView close = view.findViewById(R.id.close);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), HomeFragment.class);
+                startActivity(intent);
+            }
+        });
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Intro_Cw.class);
+                Intent intent = new Intent(getActivity(), Intro_MG.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +61,7 @@ public class GameFragment extends Fragment {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FirstMG.class);
+                Intent intent = new Intent(getActivity(), Intro_Cw.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +69,7 @@ public class GameFragment extends Fragment {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FirstDD.class);
+                Intent intent = new Intent(getActivity(), Intro_DD.class);
                 startActivity(intent);
             }
         });
@@ -71,7 +85,7 @@ public class GameFragment extends Fragment {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FirstVG.class);
+                Intent intent = new Intent(getActivity(), Intro_VG.class);
                 startActivity(intent);
             }
         });

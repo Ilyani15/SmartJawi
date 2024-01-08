@@ -13,6 +13,48 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
+            android:name=".Game.VG.Intro_VG"
+            android:exported="false" />
+        <activity
+            android:name=".Game.MG.Intro_MG"
+            android:exported="false" />
+        <activity
+            android:name=".Game.DD.Intro_DD"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahNombor1"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahNombor2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahNombor3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahNombor4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalah5"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna1"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna5"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.ResultVG"
+            android:exported="false" />
+        <activity
             android:name=".Game.VG.VG_Haiwan5"
             android:exported="false" />
         <activity
