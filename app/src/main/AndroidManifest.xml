@@ -13,6 +13,21 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
+            android:name=".Game.VG.VG_Haiwan5"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Haiwan1"
+            android:exported="false" />
+        <activity
             android:name=".NomborJawi.NomborJawiActivity"
             android:exported="false" />
         <activity
