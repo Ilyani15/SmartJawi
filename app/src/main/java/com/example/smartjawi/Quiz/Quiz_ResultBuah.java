@@ -15,6 +15,8 @@ import com.example.smartjawi.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -25,7 +27,7 @@ public class Quiz_ResultBuah extends AppCompatActivity {
     TextView textResult, name;
     FirebaseUser firebaseUser;
     FirebaseFirestore firestore;
-    String id = "buahan";
+    String id = "Buahan";
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -80,51 +82,24 @@ public class Quiz_ResultBuah extends AppCompatActivity {
             String userId = firebaseUser.getUid();
             CollectionReference collectionReference = firestore.collection("users").document(userId).collection("quiz").document(id).collection("attempts");
 
-            // Retrieve existing attempt count
-            collectionReference.document("attempt_data").get()
-                    .addOnSuccessListener(documentSnapshot -> {
-                        if (documentSnapshot.exists()) {
-                            // Document exists, retrieve the attempt count
-                            Integer currentAttempts = documentSnapshot.getLong("attempts").intValue();
+            // Reference to the attempt_data document
+            DocumentReference attemptDataRef = collectionReference.document("attempt_data");
 
-                            // Increment the attempt count
-                            int newAttempts = currentAttempts + 1;
+            // Save the attempt count and quiz result
+            Map<String, Object> data = new HashMap<>();
+            data.put("attempts", 1); // Set attempt count to 1
+            data.put("result", result); // Save the quiz result
 
-                            // Update the document with the new attempt count
-                            Map<String, Object> data = new HashMap<>();
-                            data.put("attempts", newAttempts);
-
-                            collectionReference.document("attempt_data").set(data)
-                                    .addOnSuccessListener(aVoid -> {
-                                        // Quiz result and attempt count saved successfully
-                                        Toast.makeText(Quiz_ResultBuah.this, "Quiz result and attempt count saved successfully", Toast.LENGTH_SHORT).show();
-                                    })
-                                    .addOnFailureListener(e -> {
-                                        Toast.makeText(Quiz_ResultBuah.this, "Failed to save attempt count", Toast.LENGTH_SHORT).show();
-                                    });
-                        } else {
-                            // Document does not exist, create a new one with attempt count set to 1
-                            Map<String, Object> data = new HashMap<>();
-                            data.put("attempts", 1);
-
-                            collectionReference.document("attempt_data").set(data)
-                                    .addOnSuccessListener(aVoid -> {
-                                        // Quiz result and attempt count saved successfully
-                                        Toast.makeText(Quiz_ResultBuah.this, "Quiz result and attempt count saved successfully", Toast.LENGTH_SHORT).show();
-                                    })
-                                    .addOnFailureListener(e -> {
-                                        Toast.makeText(Quiz_ResultBuah.this, "Failed to save attempt count", Toast.LENGTH_SHORT).show();
-                                    });
-                        }
+            // Use set to overwrite the existing document or create a new one
+            attemptDataRef.set(data)
+                    .addOnSuccessListener(aVoid -> {
+                        // Quiz result and attempt count saved successfully
+                        Toast.makeText(Quiz_ResultBuah.this, "Quiz result and attempt count saved successfully", Toast.LENGTH_SHORT).show();
                     })
                     .addOnFailureListener(e -> {
-                        Toast.makeText(Quiz_ResultBuah.this, "Failed to retrieve attempt count", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Quiz_ResultBuah.this, "Failed to save quiz result and attempt count", Toast.LENGTH_SHORT).show();
                     });
-
-            // Save the quiz result as before
-            Map<String, Object> quizResultData = new HashMap<>();
-            quizResultData.put("result", result);
-            collectionReference.add(quizResultData);
         }
     }
+
 }

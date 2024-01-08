@@ -88,22 +88,13 @@
                 android:src="@drawable/nombor" />
 
             <TextView
-                android:id="@+id/dd"
+                android:id="@+id/nomborjawi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Nombor Jawi"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/nomborjawi"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="320dp"
-                android:layout_marginTop="10dp"
-                android:text="10"
                 android:textSize="20sp" />
 
 
@@ -123,22 +114,13 @@
                 android:src="@drawable/cat" />
 
             <TextView
-                android:id="@+id/haiwan"
+                android:id="@+id/haiwanjawi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Haiwan"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/haiwanjawi"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="320dp"
-                android:layout_marginTop="10dp"
-                android:text="10"
                 android:textSize="20sp" />
 
 
@@ -158,22 +140,13 @@
                 android:src="@drawable/colour" />
 
             <TextView
-                android:id="@+id/Warna"
+                android:id="@+id/warnajawi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Warna"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/warnajawi"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="320dp"
-                android:layout_marginTop="10dp"
-                android:text="10"
                 android:textSize="20sp" />
 
         </RelativeLayout>
@@ -198,17 +171,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Buahan"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/buahanjawi"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="320dp"
-                android:layout_marginTop="10dp"
-                android:text="10"
                 android:textSize="20sp" />
 
 
@@ -248,9 +212,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Silang Kata"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/SilangKata"
@@ -284,9 +248,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Kad Memori"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
             <TextView
                 android:id="@+id/kadMemori"
                 android:layout_width="30dp"
@@ -317,9 +281,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Suai Padan"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
             <TextView
                 android:id="@+id/suaiPadan"
                 android:layout_width="30dp"
@@ -350,9 +314,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Betul atau Salah"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/betulSalah"
@@ -384,9 +348,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/fontjawi"
+                android:fontFamily="@font/aclonica"
                 android:text="Eja Jawi"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
             <TextView
                 android:id="@+id/ejaJawi"
                 android:layout_width="30dp"

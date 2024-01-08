@@ -13,6 +13,7 @@ import com.example.smartjawi.Fragments.ProfileFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
@@ -32,7 +33,7 @@ public class ProgressTracking extends AppCompatActivity {
         resultNombor = findViewById(R.id.nomborjawi);
         resultHaiwan = findViewById(R.id.haiwanjawi);
         resultWarna = findViewById(R.id.warnajawi);
-        resultBuahan = findViewById(R.id.buahanjawi);
+        resultBuahan = findViewById(R.id.tumbuhan);
 
         firestore = FirebaseFirestore.getInstance();
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -52,33 +53,42 @@ public class ProgressTracking extends AppCompatActivity {
     }
 
     private void retrieveQuizResults() {
-        retrieveCategoryResult("nombor", resultNombor);
-        retrieveCategoryResult("haiwan", resultHaiwan);
-        retrieveCategoryResult("warna", resultWarna);
-        retrieveCategoryResult("buahan", resultBuahan);
+        retrieveCategoryResult("Nombor", resultNombor);
+        retrieveCategoryResult("Haiwan", resultHaiwan);
+        retrieveCategoryResult("Warna", resultWarna);
+        retrieveCategoryResult("Buahan", resultBuahan);
     }
 
     private void retrieveCategoryResult(String category, TextView resultTextView) {
-        CollectionReference collectionReference = firestore.collection("users").document(userId).collection("quiz").document(category).collection("attempts");
+        DocumentReference documentReference = firestore.collection("users")
+                .document(userId)
+                .collection("quiz")
+                .document(category)
+                .collection("attempts")
+                .document("attempt_data");
 
         // Query to retrieve the latest quiz result
-        collectionReference.orderBy("timestamp", Query.Direction.DESCENDING).limit(1)
-                .get()
-                .addOnSuccessListener(queryDocumentSnapshots -> {
-                    if (!queryDocumentSnapshots.isEmpty()) {
+        documentReference.get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
                         // Retrieve the quiz result from the document
-                        DocumentSnapshot documentSnapshot = queryDocumentSnapshots.getDocuments().get(0);
-                        int quizResult = documentSnapshot.getLong("result").intValue();
-
-                        // Display the quiz result in the corresponding TextView
-                        resultTextView.setText(category + quizResult);
+                        if (documentSnapshot.contains("result")) {
+                            int quizResult = documentSnapshot.getLong("result").intValue();
+                            // Display the quiz result in the corresponding TextView
+                            resultTextView.setText(category + " Result: " + quizResult);
+                        } else {
+                            // If the document does not contain the "result" field
+                            resultTextView.setText(category + " Result: Data structure is invalid");
+                        }
                     } else {
                         // No quiz result found
-                        resultTextView.setText(category + " Result: No data available");
+                        resultTextView.setText(category + "0");
                     }
                 })
                 .addOnFailureListener(e -> {
                     Toast.makeText(ProgressTracking.this, "Failed to retrieve " + category + " result", Toast.LENGTH_SHORT).show();
                 });
     }
+
+
 }

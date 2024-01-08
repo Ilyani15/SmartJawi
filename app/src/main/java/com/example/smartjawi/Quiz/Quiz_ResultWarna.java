@@ -26,7 +26,7 @@ public class Quiz_ResultWarna extends AppCompatActivity {
     TextView textResult, name;
     FirebaseUser firebaseUser;
     FirebaseFirestore firestore;
-    String id = "warna";
+    String id = "Warna";
 
     @SuppressLint("SetTextI18n")
     @Override
