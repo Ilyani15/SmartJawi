@@ -125,7 +125,7 @@
         android:layout_height="41dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_age"
-        android:fontFamily="@font/fontjawi"
+        android:fontFamily="@font/summary"
         android:ems="10"
         android:textSize="20sp"
         android:inputType="text"
