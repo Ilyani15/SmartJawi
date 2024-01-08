@@ -24,7 +24,7 @@ public class FirstEja extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_cw);
+        setContentView(R.layout.activity_first_eja);
 
         ImageView close = findViewById(R.id.close);
 
@@ -52,7 +52,7 @@ public class FirstEja extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(com.example.smartjawi.Eja.FirstEja.this, Cw_buahan.class);
+                Intent intent = new Intent(com.example.smartjawi.Eja.FirstEja.this, QuestionEjaActivity.class);
                 startActivity(intent);
             }
         });
@@ -60,7 +60,7 @@ public class FirstEja extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(com.example.smartjawi.Eja.FirstEja.this, Cw_warna.class);
+                Intent intent = new Intent(com.example.smartjawi.Eja.FirstEja.this, QuestionEjaActivity.class);
                 startActivity(intent);
             }
         });
@@ -68,7 +68,7 @@ public class FirstEja extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(com.example.smartjawi.Eja.FirstEja.this, Cw_nombor.class);
+                Intent intent = new Intent(com.example.smartjawi.Eja.FirstEja.this, QuestionEjaActivity.class);
                 startActivity(intent);
             }
         });

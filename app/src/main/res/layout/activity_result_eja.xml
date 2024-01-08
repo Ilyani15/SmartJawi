@@ -1,61 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/red"
+tools:context=".Eja.ResultEjaActivity">
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/congrats" />
+
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_centerInParent="true"
-    android:background="@drawable/bg_eja_main"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="130dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/imageView">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/beachday"
-        android:text="PERMAINAN TAMAT"
-        android:layout_marginTop="@dimen/_85sdp"
-        android:gravity="center"
-        android:textColor="@color/light_yellow"
-        android:textSize="80dp" />
+        android:fontFamily="@font/congrats"
+        android:text="Quiz"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/summary"
+        android:text="SELESAI"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="-60dp"
+        android:fontFamily="@font/summary"
+        android:text="Tahniah,"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-44dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/summary"
+        android:textSize="40sp"
+        android:text="" />
+
 
     <TextView
         android:id="@+id/textResult"
-        android:text="result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:textColor="#ffffff"
+        android:layout_marginTop="45dp"
+        android:text="Result"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/yay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/summary"
+        android:textColor="@color/white"
+        android:gravity="center"
         android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <ImageButton
-        android:id="@+id/replay_eja_btn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/ic_baseline_arrow_back_24"
-        android:onClick="onClick" />
-<!--
-        android:background="@drawable/ic_replay_yellow"
--->
-
-<!--    <RelativeLayout-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginTop="150dp"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content">-->
-<!--        <Button-->
-<!--            android:id="@+id/replay_eja_btn"-->
-<!--            android:background="@drawable/buttonplay"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:onClick="onClick"-->
-<!--            android:fontFamily="@font/font"-->
-<!--            android:textSize="22sp"-->
-<!--            android:textAlignment="center"-->
-<!--            android:layout_marginBottom="15dp"-->
-<!--            android:text="main semula"-->
-<!--            android:textAllCaps="true"/>-->
-<!--    </RelativeLayout>-->
+        android:padding="5dp"
+        android:elevation="5sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/yay_okay"
+        android:text="Yay, OK!" />
 
 </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
