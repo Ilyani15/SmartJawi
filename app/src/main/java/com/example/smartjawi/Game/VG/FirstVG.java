@@ -52,7 +52,7 @@ public class FirstVG extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstVG.this, DD_Game_Buah1.class);
+                Intent intent = new Intent(FirstVG.this, VG_Sayur1.class);
                 startActivity(intent);
             }
         });
