@@ -41,7 +41,7 @@ public class VG_Sayur5 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(VG_Sayur5.this, DD_Result_Buah.class);
+                        Intent intent = new Intent(VG_Sayur5.this, ResultVG.class);
                         intent.putExtra("RA", great7);
                         startActivity(intent);
                         finish();
@@ -60,7 +60,7 @@ public class VG_Sayur5 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(VG_Sayur5.this, DD_Result_Buah.class);
+                        Intent intent = new Intent(VG_Sayur5.this, ResultVG.class);
                         intent.putExtra("RA", great7);
                         startActivity(intent);
                         finish();
