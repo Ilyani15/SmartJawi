@@ -13,7 +13,13 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
+            android:name=".BuahSection.BuahActivity"
+            android:exported="false" />
+        <activity
             android:name=".NomborJawi.NomborJawiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HaiwanSection.HaiwanActivity"
             android:exported="false" />
         <activity
             android:name=".WarnaSection.WarnaActivity"
