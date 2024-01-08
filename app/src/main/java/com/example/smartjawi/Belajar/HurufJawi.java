@@ -1,5 +1,6 @@
 package com.example.smartjawi.Belajar;
 
+import com.example.smartjawi.HijaiyahSection.HijaiyahActivity;
 import com.example.smartjawi.R;
 import android.content.Intent;
 import android.os.Bundle;
@@ -69,7 +70,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -77,7 +78,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -85,7 +86,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -93,7 +94,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -101,7 +102,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -109,7 +110,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -117,7 +118,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -125,7 +126,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -133,7 +134,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -141,7 +142,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -149,7 +150,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -157,7 +158,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -165,7 +166,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -173,7 +174,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -181,7 +182,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -189,7 +190,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -197,7 +198,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -205,7 +206,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -213,7 +214,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -221,7 +222,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -229,7 +230,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -237,7 +238,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -245,7 +246,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -253,7 +254,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -261,7 +262,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -269,7 +270,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -277,7 +278,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -285,7 +286,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -293,7 +294,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -301,7 +302,7 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
@@ -309,35 +310,35 @@ public class HurufJawi extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to MainActivity.class
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
         btn32.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
         btn33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
         btn34.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });
         btn35.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HurufJawi.this, BelajarFragment.class);
+                Intent intent = new Intent(HurufJawi.this, HijaiyahActivity.class);
                 startActivity(intent);
             }
         });

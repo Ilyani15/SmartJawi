@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg_board_hj"
+tools:context=".WarnaSection.WarnaActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_alignParentTop="true"
+    android:gravity="top"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/homebtn_HJ"
+            android:background="@drawable/ic_home"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentStart="true"/>
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/speakbtn_HJ"
+            android:background="@drawable/ic_speakerr"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:onClick="onSpeakButtonClick"/>
+    </RelativeLayout>
+</LinearLayout>
+
+<androidx.viewpager2.widget.ViewPager2
+    android:id="@+id/vpHijaiyah"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="250dp"
+    android:layout_marginBottom="100dp"
+    android:layout_marginHorizontal="40dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/prevbtn_HJ"
+            android:background="@drawable/nav_prevbtn"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentStart="true"/>
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/nextbtn_HJ"
+            android:background="@drawable/nav_nextbtn"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>
+
+<FrameLayout
+    android:id="@+id/fragment_HJ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,14 +1,12 @@
-package com.example.smartjawi.HijaiyahSection;
+package com.example.smartjawi.WarnaSection;
 
-public class VPItemHijaiyah {
+public class VPItemWarna {
 
     int imgHijaiyah;
     String HijaiyahHeading;
 
-    public VPItemHijaiyah(int imgHijaiyah, String hijaiyahHeading) {
+    public VPItemWarna(int imgHijaiyah, String hijaiyahHeading) {
         this.imgHijaiyah = imgHijaiyah;
         this.HijaiyahHeading = hijaiyahHeading;
     }
 }
-
-

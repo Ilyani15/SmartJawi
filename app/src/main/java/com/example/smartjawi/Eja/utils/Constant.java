@@ -9,6 +9,6 @@ public class Constant implements Serializable {
 
     //array contains the names of images in drawable folder
     public static final String[] imageQuestions = {"game_lebah", "game_api", "game_susu", "game_raja", "game_buku", "game_kasut", "game_kek", "game_zirafah", "game_mahkota", "game_masjid", "game_nasi", "game_tembikai"};
-    public static final String[] questionsAnswers = {"hbl", "ipa", "usus", "jar", "ukub", "tusak", "kek", "hfariz", "atukhm","djsm", "isan", "iakibmt"};
+    public static final String[] questionsAnswers = {"hbl", "ipa", "usus", "jar", "ukub", "tusak", "kik", "hfariz", "atukhm","djsm", "isan", "iakibmt"};
 
 }

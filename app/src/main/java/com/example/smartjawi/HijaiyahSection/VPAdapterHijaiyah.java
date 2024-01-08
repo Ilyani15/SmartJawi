@@ -41,7 +41,7 @@ public class VPAdapterHijaiyah extends RecyclerView.Adapter<VPAdapterHijaiyah.Vi
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView imgHijaiyah;
+        public ImageView imgHijaiyah;
         TextView hijaiyahHeading;
 
         public ViewHolder(@NonNull View itemView) {
