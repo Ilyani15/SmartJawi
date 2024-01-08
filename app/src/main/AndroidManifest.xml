@@ -16,6 +16,21 @@
             android:name=".NomborJawi.NomborJawiActivity"
             android:exported="false" />
         <activity
+            android:name=".Game.VG.VG_Sayur1"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.VG_Sayur5"
+            android:exported="false" />
+        <activity
             android:name=".WarnaSection.WarnaActivity"
             android:exported="false" />
         <activity

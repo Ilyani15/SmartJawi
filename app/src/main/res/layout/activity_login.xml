@@ -46,7 +46,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Email"
+        android:hint="Email"
         android:textColor="@color/black"
         android:textSize="20sp"
 
@@ -70,7 +70,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Password"
+        android:hint="Password"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/emails"
         app:layout_constraintHorizontal_bias="0.49"

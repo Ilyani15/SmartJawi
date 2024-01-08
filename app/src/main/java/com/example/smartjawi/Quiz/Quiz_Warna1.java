@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.smartjawi.Fragments.QuizFragment;
+import com.example.smartjawi.MainActivity;
 import com.example.smartjawi.R;
 
 public class Quiz_Warna1 extends AppCompatActivity {
