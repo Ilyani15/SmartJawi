@@ -15,6 +15,8 @@ import com.example.smartjawi.Game.Cw.FirstCW;
 import com.example.smartjawi.Game.Cw.Intro_Cw;
 import com.example.smartjawi.Game.DD.FirstDD;
 import com.example.smartjawi.Game.MG.FirstMG;
+import com.example.smartjawi.Game.VG.BetulSalahWarna1;
+import com.example.smartjawi.Game.VG.FirstVG;
 import com.example.smartjawi.R;
 
 public class GameFragment extends Fragment {
@@ -32,6 +34,7 @@ public class GameFragment extends Fragment {
         btn2 = view.findViewById(R.id.satu);
         btn3 = view.findViewById(R.id.tiga);
         btn4 = view.findViewById(R.id.empat);
+        btn5 = view.findViewById(R.id.lima);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +64,14 @@ public class GameFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), EjaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FirstVG.class);
                 startActivity(intent);
             }
         });
