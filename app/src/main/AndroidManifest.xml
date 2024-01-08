@@ -13,6 +13,24 @@
         android:theme="@style/Theme.SmartJawi"
         tools:targetApi="31">
         <activity
+            android:name=".Game.VG.ResultVG"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna5"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna4"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna3"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna2"
+            android:exported="false" />
+        <activity
+            android:name=".Game.VG.BetulSalahWarna1"
+            android:exported="false" />
+        <activity
             android:name=".NomborJawi.NomborJawiActivity"
             android:exported="false" />
         <activity
