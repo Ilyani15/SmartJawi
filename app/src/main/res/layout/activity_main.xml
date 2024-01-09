@@ -19,13 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#FFE6A7"
-        app:mbn_backgroundBottomColor="#99582A"
+        android:background="#E8F3FF"
+        app:mbn_backgroundBottomColor="#EF3349"
         app:mbn_circleColor="@color/yellow_tip"
         app:mbn_countBackgroundColor="#ff6f00"
         app:mbn_countTextColor="#BA5757"
-        app:mbn_defaultIconColor="#BB9457"
-        app:mbn_selectedIconColor="#432818"
+        app:mbn_defaultIconColor="#E4BD7C"
+        app:mbn_selectedIconColor="#C62828"
         app:mbn_shadowColor="#1f212121" />
 
 </RelativeLayout>
