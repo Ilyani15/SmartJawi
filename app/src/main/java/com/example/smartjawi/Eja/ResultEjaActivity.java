@@ -78,12 +78,11 @@ public class ResultEjaActivity extends AppCompatActivity {
     private void saveEjaResultToFirestore(int result) {
         if (firebaseUser != null) {
             String userId = firebaseUser.getUid();
-            CollectionReference collectionReference = firestore.collection("users")
-                    .document(userId)
-                    .collection("Mengeja"); // Adjust this path as needed
+
+            CollectionReference collectionReference = firestore.collection("users").document(userId).collection("Mengeja").document("Eja Jawi").collection("attempts");
 
             // Reference to the attempt_data document
-            DocumentReference attemptDataRef = collectionReference.document("Eja Jawi");
+            DocumentReference gameDataRef = collectionReference.document("attempt_data");
 
             // Save the attempt count and eja result
             Map<String, Object> data = new HashMap<>();
@@ -91,7 +90,7 @@ public class ResultEjaActivity extends AppCompatActivity {
             data.put("result", result); // Save the eja result
 
             // Use set to overwrite the existing document or create a new one
-            attemptDataRef.set(data)
+            gameDataRef.set(data)
                     .addOnSuccessListener(aVoid -> {
                         // Eja result and attempt count saved successfully
                         Toast.makeText(ResultEjaActivity.this, "Eja result and attempt count saved successfully", Toast.LENGTH_SHORT).show();

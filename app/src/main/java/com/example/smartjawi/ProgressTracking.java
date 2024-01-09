@@ -30,11 +30,11 @@ public class ProgressTracking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_tracking);
 
-        resultSuai = findViewById(R.id.suai);
         resultNombor = findViewById(R.id.nomborjawi);
         resultHaiwan = findViewById(R.id.haiwanjawi);
         resultWarna = findViewById(R.id.warnajawi);
         resultBuahan = findViewById(R.id.tumbuhan);
+        resultSuai = findViewById(R.id.suai);
         resultMG = findViewById(R.id.kadM);
         resultVG = findViewById(R.id.BETUL);
         resultEja = findViewById(R.id.ejaan);
@@ -62,6 +62,7 @@ public class ProgressTracking extends AppCompatActivity {
         retrieveCategoryResult("Warna", resultWarna);
         retrieveCategoryResult("Buahan", resultBuahan);
         retrieveCategoryResult2("Suai Padan", resultSuai);
+
         retrieveCategoryResult3("Kad Memori", resultMG);
         retrieveCategoryResult4("Betul atau Salah", resultVG);
         retrieveCategoryResult5("Eja Jawi", resultEja);
@@ -160,7 +161,7 @@ public class ProgressTracking extends AppCompatActivity {
     private void retrieveCategoryResult4(String category, TextView resultTextView) {
         DocumentReference documentReference = firestore.collection("users")
                 .document(userId)
-                .collection("Memory Game")
+                .collection("Vote Game")
                 .document(category)
                 .collection("attempts")
                 .document("attempt_data");

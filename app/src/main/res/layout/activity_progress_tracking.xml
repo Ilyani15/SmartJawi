@@ -207,7 +207,7 @@
                 android:src="@drawable/crossword" />
 
             <TextView
-                android:id="@+id/si"
+                android:id="@+id/silangkata"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -216,14 +216,6 @@
                 android:text="Silang Kata Result: 0"
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/SilangKata"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:textSize="20sp"
-                android:layout_marginLeft="165dp"
-                android:layout_marginTop="10dp"
-                android:text="10" />
 
 
 
@@ -251,14 +243,7 @@
                 android:fontFamily="@font/aclonica"
                 android:text="Kad Memori"
                 android:textSize="20sp" />
-            <TextView
-                android:id="@+id/kadMemori"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:textSize="20sp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="10dp"
-                android:text="10" />
+
 
         </LinearLayout>
 
@@ -284,14 +269,7 @@
                 android:fontFamily="@font/aclonica"
                 android:text="Suai Padan"
                 android:textSize="20sp" />
-            <TextView
-                android:id="@+id/suaiPadan"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:textSize="20sp"
-                android:layout_marginLeft="165dp"
-                android:layout_marginTop="10dp"
-                android:text="10" />
+
 
         </LinearLayout>
 
@@ -318,14 +296,7 @@
                 android:text="Betul atau Salah"
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/betulSalah"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:textSize="20sp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="10dp"
-                android:text="10" />
+
 
         </LinearLayout>
 
@@ -351,14 +322,6 @@
                 android:fontFamily="@font/aclonica"
                 android:text="Eja Jawi"
                 android:textSize="20sp" />
-            <TextView
-                android:id="@+id/ejaJawi"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:textSize="20sp"
-                android:layout_marginLeft="185dp"
-                android:layout_marginTop="10dp"
-                android:text="10" />
 
         </LinearLayout>
 

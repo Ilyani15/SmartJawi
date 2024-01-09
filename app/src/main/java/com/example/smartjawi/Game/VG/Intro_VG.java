@@ -55,7 +55,7 @@ public class Intro_VG extends AppCompatActivity {
 
         gameButton = findViewById(R.id.btn_play);
         gameButton.setOnClickListener(view -> {
-            Intent intentnew = new Intent(this, FirstCW.class);
+            Intent intentnew = new Intent(this, FirstVG.class);
             startActivity(intentnew);
         });
         gameButton = findViewById(R.id.btn_quit);

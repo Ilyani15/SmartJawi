@@ -78,13 +78,10 @@ public class ResultVG extends AppCompatActivity {
     private void saveGameResultToFirestore(int result) {
         if (firebaseUser != null) {
             String userId = firebaseUser.getUid();
-            CollectionReference collectionReference = firestore.collection("users")
-                    .document(userId)
-                    .collection("Vote Game"); // Adjust this path as needed
+            CollectionReference collectionReference = firestore.collection("users").document(userId).collection("Vote Game").document("Betul atau Salah").collection("attempts");
 
-            // Reference to the game_data document
-            DocumentReference gameDataRef = collectionReference.document("Betul atau Salah");
-
+            // Reference to the attempt_data document
+            DocumentReference gameDataRef = collectionReference.document("attempt_data");
             // Save the attempt count and game result
             Map<String, Object> data = new HashMap<>();
             data.put("attempts", 1); // Set attempt count to 1

@@ -26,8 +26,6 @@ public class DD_Result_Warna extends AppCompatActivity {
     TextView textResult;
     FirebaseUser firebaseUser;
     FirebaseFirestore firestore;
-    String id = "Suai Padan"; // Update with your desired identifier
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +59,7 @@ public class DD_Result_Warna extends AppCompatActivity {
     private void saveResultToFirestore(int result) {
         if (firebaseUser != null) {
             String userId = firebaseUser.getUid();
-            CollectionReference collectionReference = firestore.collection("users").document(userId).collection("drag_drop").document(id).collection("attempts");
+            CollectionReference collectionReference = firestore.collection("users").document(userId).collection("drag_drop").document("Suai Padan").collection("attempts");
 
             // Reference to the attempt_data document
             DocumentReference attemptDataRef = collectionReference.document("attempt_data");

@@ -53,7 +53,7 @@ public class GameFragment extends Fragment {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Intro_MG.class);
+                Intent intent = new Intent(getActivity(), Intro_Cw.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +61,7 @@ public class GameFragment extends Fragment {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Intro_Cw.class);
+                Intent intent = new Intent(getActivity(), Intro_MG.class);
                 startActivity(intent);
             }
         });
